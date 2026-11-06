@@ -1,0 +1,4 @@
+Build scripts. Not needed to serve the site; run from the repo root:
+
+    node tools/build-resume.mjs   # regenerates resume/index.html from ../career-ops/cv.md
+    node tools/build-pdf.mjs      # renders assets/George_Kulick_Resume.pdf

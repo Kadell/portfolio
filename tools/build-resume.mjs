@@ -6,8 +6,8 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const here = dirname(fileURLToPath(import.meta.url));
-const src = process.argv[2] ?? resolve(here, '..', 'career-ops', 'cv.md');
-const out = resolve(here, 'resume', 'index.html');
+const src = process.argv[2] ?? resolve(here, '..', '..', 'career-ops', 'cv.md');
+const out = resolve(here, '..', 'resume', 'index.html');
 
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const inline = (s) =>

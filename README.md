@@ -7,13 +7,13 @@ Static, zero-dependency site: `index.html` + `styles.css` + `resume/`. Deploys a
 The resume page is generated from the canonical CV in the sibling `career-ops/cv.md`, never edited by hand:
 
 ```bash
-node build-resume.mjs
+node tools/build-resume.mjs
 ```
 
 Then render the PDF (uses the print stylesheet; borrows Playwright from the sibling `career-ops/` install):
 
 ```bash
-node build-pdf.mjs
+node tools/build-pdf.mjs
 ```
 
 ## Content rules

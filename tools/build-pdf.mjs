@@ -7,11 +7,11 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { mkdirSync } from 'node:fs';
 
 const here = dirname(fileURLToPath(import.meta.url));
-const require = createRequire(resolve(here, '..', 'career-ops', 'package.json'));
+const require = createRequire(resolve(here, '..', '..', 'career-ops', 'package.json'));
 const { chromium } = require('playwright');
 
-const input = resolve(here, 'resume', 'index.html');
-const output = resolve(here, 'assets', 'George_Kulick_Resume.pdf');
+const input = resolve(here, '..', 'resume', 'index.html');
+const output = resolve(here, '..', 'assets', 'George_Kulick_Resume.pdf');
 mkdirSync(dirname(output), { recursive: true });
 
 const browser = await chromium.launch();
