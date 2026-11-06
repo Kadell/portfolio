@@ -63,7 +63,7 @@ const page = `<!doctype html>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="wrap site-header">
-  <a class="brand" href="../">george-kulick.dev</a>
+  <a class="brand" href="../">georgekulick.com</a>
   <nav class="site-nav" aria-label="Primary">
     <a href="../#work">Case studies</a>
     <a href="../#agents">AI agent builds</a>
