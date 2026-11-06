@@ -29,4 +29,11 @@ node tools/build-pdf.mjs
 - `[YOUR-GITHUB]` footer link
 - `[ELEVENLABS-AGENT-ID]` widget
 - Jarvis card copy and both screenshot slots
-- `assets/og.png` (1200×630 link preview)
+
+## Rebuild the link-preview image
+
+`assets/og.png` (1200×630) is rendered from `tools/og.html`, which reuses the site's own stylesheet and fonts:
+
+```bash
+node tools/build-og.mjs
+```

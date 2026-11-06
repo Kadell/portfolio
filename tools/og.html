@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OG card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  html, body { margin: 0; padding: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body { padding-bottom: 0; background: var(--ground); }
+  .og-card {
+    position: relative; width: 1200px; height: 630px;
+    padding: 72px 76px; box-sizing: border-box;
+    display: grid; grid-template-columns: 1fr 380px; gap: 32px; align-items: center;
+  }
+  .frame { position: absolute; inset: 40px; border: 1px solid var(--line); border-radius: 12px; pointer-events: none; }
+  .copy { display: flex; flex-direction: column; gap: 22px; }
+  .og-eyebrow { font-family: var(--font-mono); font-size: 16px; letter-spacing: .08em; white-space: nowrap; color: var(--accent); margin: 0; }
+  .og-name { font-family: var(--font-display); font-weight: 700; font-size: 76px; line-height: 1; letter-spacing: -.02em; color: var(--text); margin: 0; }
+  .og-line { font-family: var(--font-display); font-weight: 500; font-size: 42px; line-height: 1.15; letter-spacing: -.01em; color: var(--text-3); margin: 0; max-width: 16ch; }
+  .diagram { display: flex; flex-direction: column; gap: 14px; }
+  .diagram .node { white-space: nowrap; font-size: 19px; font-weight: 500; padding: 16px 18px; border-radius: 8px; color: var(--text-2); }
+  .diagram .h-link { width: 22px; }
+  .diagram .v-link { height: 22px; }
+  .diagram .flow-row { gap: 12px; }
+  .diagram .flow-turn { padding-right: calc(50% - 17px); }
+  .foot {
+    position: absolute; left: 76px; right: 76px; bottom: 62px;
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-family: var(--font-mono); font-size: 18px; color: var(--muted);
+  }
+  .foot .site { color: var(--text-3); }
+</style>
+</head>
+<body>
+<div class="og-card">
+  <div class="frame"></div>
+  <div class="copy">
+    <p class="og-eyebrow">SOLUTION ARCHITECT · CONVERSATIONAL AI · 2011–PRESENT</p>
+    <p class="og-name">George Kulick</p>
+    <p class="og-line">I ship enterprise conversational AI.</p>
+  </div>
+  <div class="diagram flow">
+    <div class="flow-row">
+      <div class="node node-accent">Scoping &amp; SOW</div>
+      <div class="h-link"></div>
+      <div class="node">Integration</div>
+    </div>
+    <div class="flow-turn"><div class="v-link"></div></div>
+    <div class="flow-row">
+      <div class="node">Enablement</div>
+      <div class="h-link"></div>
+      <div class="node">Build &amp; launch</div>
+    </div>
+  </div>
+  <div class="foot">
+    <span class="site">georgekulick.com</span>
+    <span>United Airlines · Citibank · LivePerson · Quiq</span>
+  </div>
+</div>
+</body>
+</html>
