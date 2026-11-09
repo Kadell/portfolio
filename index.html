@@ -159,12 +159,17 @@
   <div class="cards">
     <article class="card">
       <div class="shot"><!-- TODO: screenshot, cropped, no application data --><span>screenshot slot · 16:9</span></div>
-      <div class="mono">career-ops · Claude Code · 2026</div>
-      <h3>Multi-agent job-search pipeline with fact gates on every output</h3>
-      <p>Parallel research and evaluation agents, direct Greenhouse / Ashby / Lever API scanners, generated deliverables with human review.</p>
+      <div class="mono">job-search agents · Claude Code · 2026</div>
+      <h3>Job-search pipeline run on Claude Code agents, with a fact gate on every output</h3>
+      <ul class="card-list">
+        <li>Designed a three-stage agent team: a Gmail digest reader, a job qualifier that scores each posting, and a resume customizer for everything above threshold.</li>
+        <li>Strict source rules: one trusted feed, no outside enrichment, no claim that isn't in the resume.</li>
+        <li>Then migrated the process onto the open-source <a href="https://github.com/santifer/career-ops" rel="noopener">career-ops</a> project, configuring targeting, scoring overrides and house rules.</li>
+        <li>Every generated document is reviewed before it leaves the machine.</li>
+      </ul>
       <div class="split">
-        <div><span class="label">I designed</span>Architecture, verification rules, review of every change</div>
-        <div><span class="label">Agents wrote</span>Portal scanners, dashboards, verification scripts</div>
+        <div><span class="label">I designed</span>The three-stage pipeline and its source and fact rules; the targeting profile and house rules in career-ops; review of every generated document.</div>
+        <div><span class="label">Agents wrote</span>The pipeline stages and scorer, plus the career-ops customizations and helper scripts. career-ops itself is by Santiago Fernández and its contributors.</div>
       </div>
     </article>
     <article class="card">
