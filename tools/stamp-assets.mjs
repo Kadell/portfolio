@@ -8,7 +8,7 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const ASSETS = ['styles.css', 'assets/player.js', 'assets/jarvis.mp3', 'assets/jarvis.peaks.json', 'assets/og.png', 'assets/George_Kulick_Resume.pdf'];
+const ASSETS = ['styles.css', 'assets/player.js', 'assets/jarvis.mp3', 'assets/jarvis.peaks.json', 'assets/og.png', 'assets/George_Kulick_Resume.pdf', 'assets/stationscript-factory.webp'];
 const PAGES = ['index.html', '404.html', 'resume/index.html'];
 
 const hash = p => createHash('sha256').update(readFileSync(resolve(root, p))).digest('hex').slice(0, 8);
