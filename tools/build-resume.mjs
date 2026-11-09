@@ -56,6 +56,21 @@ const page = `<!doctype html>
 <title>Resume · George Kulick</title>
 <meta name="description" content="George Kulick, solution architect: 15 years of enterprise conversational AI delivery at LivePerson and Quiq.">
 <meta name="robots" content="noindex">
+<meta property="og:title" content="Resume · George Kulick">
+<meta property="og:description" content="George Kulick, solution architect: 15 years of enterprise conversational AI delivery at LivePerson and Quiq.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://georgekulick.com/resume/">
+<meta property="og:image" content="https://georgekulick.com/assets/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="George Kulick, solution architect in conversational AI since 2011: I ship enterprise conversational AI.">
+<meta property="og:site_name" content="georgekulick.com">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Resume · George Kulick">
+<meta name="twitter:description" content="George Kulick, solution architect: 15 years of enterprise conversational AI delivery at LivePerson and Quiq.">
+<meta name="twitter:image" content="https://georgekulick.com/assets/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="../styles.css">
