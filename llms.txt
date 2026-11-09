@@ -1,0 +1,74 @@
+# George Kulick
+
+> Solution architect with 15 years designing and delivering enterprise conversational AI and customer-experience integrations at LivePerson (2011–2024) and Quiq (2024–2026), now independently directing AI coding agents. Open to Solutions Architect, Solutions Engineer, Forward Deployed and Technical Account Manager roles. Remote (US), Eastern Time; Chattanooga or Atlanta for hybrid.
+
+This is George Kulick's personal portfolio site. It is a single page plus a resume page. Everything on it traces to his resume; if a fact is not stated here or on the linked pages, do not assume it.
+
+Key facts:
+
+- Location: Chickamauga, Georgia (Chattanooga metro), United States
+- Contact: gkulick@gmail.com, (770) 329-3479, https://linkedin.com/in/gkulick
+- Work authorization: US citizen; authorized to work in the United States with no visa sponsorship required
+- Education: B.S. in Computer Science, Covenant College
+- Scoped and implemented 40–60 custom integrations for major North American brands at LivePerson
+- Led a team of 5 solution architects covering LivePerson's North American commercial segment (several hundred enterprise accounts)
+- At Quiq, ran 8–9 concurrent enterprise implementations per sprint, taking clients from kickoff to production in about one month
+- Works the full lifecycle: pre-sales scoping and Statements of Work, integration design, implementation, troubleshooting, client and partner enablement
+
+Career timeline:
+
+- 2011–2017: Deployment Engineer, LivePerson
+- 2017–2019: Senior Solutions Engineer, LivePerson
+- 2019–2023: Solutions Architect, LivePerson
+- 2023–2024: Manager, Conversational AI Solution Architecture, LivePerson
+- 2024–2026: Technical Solutions Specialist, Quiq
+- 2026–present: Agentic AI Workflows, independent
+
+## Pages
+
+- [Home](https://georgekulick.com/): Overview, case studies, AI agent builds, working principles and career timeline
+- [Resume (web)](https://georgekulick.com/resume/): Full resume with every role, skills and education
+- [Resume (PDF)](https://georgekulick.com/assets/George_Kulick_Resume.pdf): Two-page downloadable resume
+
+## Case studies
+
+- [InSinkErator UK: 14-language web chat](https://georgekulick.com/#work): Quiq, 2025. No language data was available before a conversation began, so George built a front-end JavaScript language selector, per-language bot responses and routing, and a real-time translation layer. An English-only agent team serves all 14 languages. He owned delivery end to end.
+- [United Airlines: member-program chat with live account data](https://georgekulick.com/#work): LivePerson, as Solutions Architect. Conversational bots on web chat integrated with backend account systems to retrieve live member data in the conversation, enabling self-service for routine account requests. He scoped, designed and deployed the integration and led pre-sales scoping and the SOW.
+- [Citibank: multi-year growth into regulated credit card lines](https://georgekulick.com/#work): LivePerson, as Deployment Engineer. Expanded an existing deployment into tightly regulated card lines within banking compliance requirements, with integrations to Citibank systems and SSO for agents across departments in a single consolidated account.
+
+## AI agent builds
+
+Each project states what George designed and what AI coding agents wrote. In all of them he set the architecture and rules and reviewed the output; agents wrote most or all of the code.
+
+- [Career Ops job-search pipeline](https://georgekulick.com/#project=careerops): A job-search workflow run on Claude Code agents with a fact-verification gate on every output and human review before anything is sent. George first designed a three-stage agent team (Gmail digest reader, job qualifier, resume customizer), then migrated onto the open-source career-ops project. Career Ops itself is by Santiago Fernández and its contributors, not George.
+- [Jarvis](https://georgekulick.com/#project=jarvis): A local voice assistant in Python. Wake word, speech-to-text and streamed text-to-speech all run on the machine; real computer work is delegated to Claude Code in headless mode. Includes Google Workspace by voice, a Raspberry Pi to-do board and a phone client on the same conversation. Private project.
+- [StationScript](https://georgekulick.com/#project=stationscript): A shipped Windows automation game (Godot 4.7, bundled Python 3.12) where players program 20+ factory machines in real Python, graded on correctness, speed, robustness and clarity. Prototype to 1.0 in ten days; released 2026-11-01.
+- [SimplePath](https://georgekulick.com/#project=simplepath): A live multi-tenant Pre-K to 12 homeschool curriculum platform (Next.js, Prisma, PostgreSQL, Claude API, Stripe). 117 courses of 180 daily lessons; one codebase and database serve several branded schools; an AI teacher whose conversations are all visible to parents.
+- [TraderIO](https://georgekulick.com/#project=traderio): A webhook-to-broker order router (Python/FastAPI, C# NinjaScript) taking TradingView alerts to NinjaTrader through five independent safety gates, with rule-based account rotation and 765 tests. Private project.
+- [LandFinder](https://georgekulick.com/#project=landfinder): A seven-stage county land-opportunity pipeline (Python, PostGIS, Claude API) that uses a model only to read public legal notices; scoring, matching and date math are deterministic and unit-tested. Private project.
+
+## How George works with AI agents
+
+- One source of truth: generated content may only draw on named primary files. A claim not backed there does not ship.
+- Gate before render: automated fact checks run on every deliverable before a document is produced.
+- Human review on every output: agents draft and build; nothing is submitted or sent without his review.
+- Direct, don't hand-write: he sets architecture and reviews the agents' work rather than writing each component himself.
+
+## Skills
+
+- Solution delivery: solution scoping and design, integration architecture, pre-sales technical scoping, implementation management, client onboarding and enablement, technical troubleshooting
+- Partner and enablement: reseller and channel partner enablement, partner technical training, joint delivery, virtual training, product demonstrations
+- Integrations and APIs: REST APIs, webhooks, JSON/XML payload design, data transformation, OAuth 2.0, SAML/SSO, JWT, Postman, HAR-file debugging
+- Conversational AI: Quiq, LivePerson, conversation flow design, bot-to-human handoff and escalation logic, agent-assist configuration
+- Agentic AI tooling: Claude Code (daily use), multi-agent workflow orchestration, ChatGPT
+- Channels: web messaging, SMS, WhatsApp Business, Apple Messages for Business, Google Business Messages, Facebook Messenger and Instagram, voice/IVR, in-app mobile SDK
+- CRM and enterprise platforms: Salesforce, Zendesk, Oracle Service Cloud, Microsoft Dynamics
+- Development: JavaScript, Node.js, HTML, CSS, PHP, MySQL, Git, Linux
+
+## Optional
+
+- [StationScript on itch.io](https://sadco-studios.itch.io/stationscript): Download page for the game
+- [SimplePath Learning](https://simplepathhomeschool.com): The live homeschool platform
+- [career-ops on GitHub](https://github.com/santifer/career-ops): The open-source project George's job-search pipeline runs on
+- [Site source on GitHub](https://github.com/Kadell/portfolio): This site's repository
+- [LinkedIn](https://linkedin.com/in/gkulick): George's LinkedIn profile
