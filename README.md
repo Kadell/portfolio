@@ -37,7 +37,6 @@ Without it a deploy ships new HTML with the old stylesheet.
 
 - `[YOUR-DOMAIN]` in `index.html` (OG tags, JSON-LD)
 - `[YOUR-GITHUB]` footer link
-- `[ELEVENLABS-AGENT-ID]` widget
 - Jarvis card copy and the career-ops screenshot slot
 
 ## Rebuild the link-preview image

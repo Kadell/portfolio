@@ -29,7 +29,7 @@ window.PORTFOLIO_PROJECTS = [
         heading: 'What it is',
         paragraphs: [
           'Career Ops is an open-source job-search agent by Santiago Fernández and a large contributor community. It runs inside whatever AI coding CLI you already use (Claude Code, Codex, OpenCode and others), keeps every piece of data in plain local files, and never submits an application: it finds, evaluates and drafts, then the human reviews and clicks.',
-          'I run it as the engine of my own search. My work on top of it is the targeting profile, scoring overrides, house rules, a few helper scripts, and the review discipline described below. The three-stage agent team I built before adopting it is what taught me what to configure.'
+          'I run it as the engine of my own search. I extended it by merging my own resume maker into it; the rest of my work on top is the targeting profile, scoring overrides, house rules, a few helper scripts, and the review discipline described below. The three-stage agent team I built before adopting it is what taught me what to configure.'
         ]
       },
       {
@@ -77,7 +77,8 @@ window.PORTFOLIO_PROJECTS = [
         heading: 'My work on top of it',
         items: [
           'Before adopting Career Ops I designed a three-stage Claude Code agent team: a Gmail digest reader, a job qualifier that scores each posting, and a resume customizer for everything above threshold, with strict source rules (one trusted feed, no outside enrichment, no claim that is not in the resume).',
-          'Migrated that process onto Career Ops: targeting archetypes and narrative, scoring overrides, procedural house rules, and a small static pipeline page for review.',
+          'Extended Career Ops by merging my own resume maker into it.',
+          'Migrated the rest of that process onto Career Ops: targeting archetypes and narrative, scoring overrides, procedural house rules, and a small static pipeline page for review.',
           'Operate it interactively only, with every generated document reviewed before it leaves the machine, and with the fact gates run on each tailored CV.'
         ]
       }
@@ -85,7 +86,7 @@ window.PORTFOLIO_PROJECTS = [
     authorship: {
       designed: 'The three-stage pipeline and its source and fact rules; the targeting profile and house rules in Career Ops; review of every generated document.',
       wrote: 'Agents wrote the pipeline stages and scorer, plus my Career Ops customizations and helper scripts.',
-      credit: 'Career Ops itself is by Santiago Fernández and its contributors. The architecture described here is theirs; the infographics are my reading of the published codebase.'
+      credit: 'Career Ops was originally created by Santiago Fernández and its contributors; I extended it by merging my resume maker into it. The core architecture described here is theirs; the infographics are my reading of the published codebase.'
     },
     links: [
       { label: 'career-ops on GitHub', href: 'https://github.com/santifer/career-ops' }
