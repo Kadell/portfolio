@@ -45,8 +45,9 @@
     opener = null;
   });
   lightbox.addEventListener('close', () => {
-    const back = dialog.querySelector('.sc-enlarge');
-    if (back) back.focus();
+    const back = lightboxReturn || dialog.querySelector('.sc-enlarge');
+    lightboxReturn = null;
+    if (back && document.contains(back)) back.focus();
   });
 
   // ---- SVG loading ---------------------------------------------------------
@@ -67,6 +68,25 @@
     svg.setAttribute('aria-label', alt);
     return svg;
   }
+
+  // ---- image lightbox (card thumbnails, modal screenshots) -----------------
+  function openImage(src, alt, caption, returnTo) {
+    const close = el('button', { type: 'button', class: 'sc-close', 'aria-label': 'Close enlarged view', html: '&times;' });
+    close.addEventListener('click', () => lightbox.close());
+    const fig = el('figure', { class: 'lb-figure' }, [el('img', { src, alt })]);
+    lightbox.replaceChildren(close, fig, el('p', { class: 'lb-caption mono', text: caption || alt }));
+    lightboxReturn = returnTo || null;
+    lightbox.showModal();
+    close.focus();
+  }
+  let lightboxReturn = null;
+  document.addEventListener('click', e => {
+    const z = e.target.closest('.zoom[data-zoom]');
+    if (!z) return;
+    e.preventDefault();
+    const img = z.querySelector('img');
+    openImage(z.dataset.zoom, img ? img.alt : '', z.dataset.caption || z.closest('figure')?.querySelector('figcaption')?.textContent || '', z);
+  });
 
   // ---- gallery -------------------------------------------------------------
   function gallery(items) {
@@ -154,7 +174,9 @@
 
     if (p.screenshots?.length) {
       body.append(el('div', { class: 'sc-shots' }, p.screenshots.map(s => el('figure', { class: 'sc-shot' }, [
-        el('img', { src: s.src, alt: s.alt, loading: 'lazy', width: '1280', height: '720' }),
+        el('button', { type: 'button', class: 'zoom', 'data-zoom': s.src, 'aria-label': 'Enlarge: ' + s.alt }, [
+          el('img', { src: s.src, alt: s.alt, loading: 'lazy', width: '1280', height: '720' })
+        ]),
         s.caption && el('figcaption', { text: s.caption })
       ]))));
     }

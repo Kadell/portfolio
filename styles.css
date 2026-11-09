@@ -262,3 +262,12 @@ dialog.lightbox .sc-close { position: absolute; top: 12px; right: 12px; z-index:
   .sc-tab { white-space: nowrap; padding: 10px 10px; }
   .sc-enlarge { display: none; }
 }
+
+/* compact cards: one-line designed/wrote, zoomable media */
+.card-split { margin: 0; border-top: 1px solid var(--line); padding-top: 10px; font-size: 13px; line-height: 1.5; color: var(--text-3); }
+.card-split b { font-weight: 600; color: var(--text); }
+.zoom { all: unset; display: block; width: 100%; height: 100%; cursor: zoom-in; }
+.zoom:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.zoom img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.sc-shot .zoom img { height: auto; aspect-ratio: 16 / 9; border: 1px solid var(--line-strong); border-radius: 6px; }
+.lb-figure img { width: 100%; height: auto; display: block; border-radius: 6px; }

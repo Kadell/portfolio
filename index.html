@@ -13,7 +13,7 @@
 <meta name="theme-color" content="#0F1419">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="styles.css?v=08a0972a">
+<link rel="stylesheet" href="styles.css?v=8afc5c04">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -158,19 +158,15 @@
   </div>
   <div class="cards">
     <article class="card">
-      <div class="shot"><img src="assets/careerops-overview.webp?v=7d4560cf" alt="Career Ops overview infographic: six connected steps from Discover Jobs to Learn and Improve, with Human Reviews and Applies highlighted" width="1280" height="720" loading="lazy"></div>
+      <div class="shot"><button type="button" class="zoom" data-zoom="assets/careerops-overview.webp?v=7d4560cf" aria-label="Enlarge the Career Ops overview infographic" data-caption="Career Ops · overview infographic (open Explore for the full set)"><img src="assets/careerops-overview.webp?v=7d4560cf" alt="Career Ops overview infographic: six connected steps from Discover Jobs to Learn and Improve, with Human Reviews and Applies highlighted" width="1280" height="720" loading="lazy"></button></div>
       <div class="mono">job-search agents · Claude Code · 2026</div>
       <h3>Job-search pipeline run on Claude Code agents, with a fact gate on every output</h3>
       <ul class="card-list">
-        <li>Designed a three-stage agent team: a Gmail digest reader, a job qualifier that scores each posting, and a resume customizer for everything above threshold.</li>
+        <li>A three-stage agent team: Gmail digest reader, job qualifier, resume customizer.</li>
         <li>Strict source rules: one trusted feed, no outside enrichment, no claim that isn't in the resume.</li>
-        <li>Then migrated the process onto the open-source <a href="https://github.com/santifer/career-ops" rel="noopener">career-ops</a> project, configuring targeting, scoring overrides and house rules.</li>
-        <li>Every generated document is reviewed before it leaves the machine.</li>
+        <li>Migrated onto the open-source <a href="https://github.com/santifer/career-ops" rel="noopener">career-ops</a> project; every document is reviewed before it leaves the machine.</li>
       </ul>
-      <div class="split">
-        <div><span class="label">I designed</span>The three-stage pipeline and its source and fact rules; the targeting profile and house rules in career-ops; review of every generated document.</div>
-        <div><span class="label">Agents wrote</span>The pipeline stages and scorer, plus the career-ops customizations and helper scripts. career-ops itself is by Santiago Fernández and its contributors.</div>
-      </div>
+      <p class="card-split"><b>Designed</b> the pipeline and its rules, my Career Ops profile and house rules. <b>Agents wrote</b> the stages, scorer and customizations. Career Ops itself is by Santiago Fernández.</p>
       <div class="card-actions"><button type="button" class="btn btn-explore" data-project="careerops" aria-haspopup="dialog">Explore Career Ops</button></div>
     </article>
     <article class="card">
@@ -186,35 +182,23 @@
       <div class="mono">Jarvis · voice assistant · 2026</div>
       <h3>Voice assistant that delegates tasks to Claude Code headless and reads results aloud</h3>
       <ul class="card-list">
-        <li>Runs the whole voice loop locally.</li>
+        <li>Runs the whole voice loop locally: wake word, speech-to-text, streamed speech.</li>
         <li>Hands real computer work to Claude Code in headless mode.</li>
-        <li>Google Workspace by voice: calendar, Gmail across multiple accounts and send-as aliases, contacts.</li>
-        <li>Everyday tools: weather, traffic-aware directions, local business search, web research and page reading.</li>
-        <li>Voice control of a household to-do board running on a Raspberry Pi.</li>
-        <li>Same assistant from a phone: a PWA talks to a FastAPI endpoint with token auth and continues the conversation started at the desk.</li>
+        <li>Calendar, Gmail, contacts, directions, a Raspberry Pi to-do board, and a phone client on the same conversation.</li>
       </ul>
-      <div class="split">
-        <div><span class="label">I designed</span>Overall system design and the feature set; research and selection of the speech stack (faster-whisper, Piper, openWakeWord); QA of every build and verification that agent output matched the brief.</div>
-        <div><span class="label">Agents wrote</span>Essentially all of the code: voice pipeline, tool registry, Google integrations, builder mode, phone server.</div>
-      </div>
+      <p class="card-split"><b>Designed</b> the system, the feature set and the speech stack; QA of every build. <b>Agents wrote</b> essentially all of the code.</p>
       <div class="card-actions"><button type="button" class="btn btn-explore" data-project="jarvis" aria-haspopup="dialog">Explore Jarvis</button></div>
     </article>
     <article class="card">
-      <div class="shot"><img src="assets/stationscript-factory.webp?v=987b6be3" alt="StationScript: a factory floor of named machines (ore scanner, smelters, test bench, market uplink) joined by conveyors, each showing a three-star code grade" width="1280" height="720" loading="lazy"></div>
+      <div class="shot"><button type="button" class="zoom" data-zoom="assets/stationscript-factory.webp?v=987b6be3" aria-label="Enlarge the StationScript factory screenshot" data-caption="StationScript · a late-game factory"><img src="assets/stationscript-factory.webp?v=987b6be3" alt="StationScript: a factory floor of named machines (ore scanner, smelters, test bench, market uplink) joined by conveyors, each showing a three-star code grade" width="1280" height="720" loading="lazy"></button></div>
       <div class="mono">StationScript · Godot 4.7 + Python 3.12 · 2026</div>
       <h3>Build a space factory. Program every machine in real Python.</h3>
       <ul class="card-list">
         <li>Shipped Windows game, <a href="https://sadco-studios.itch.io/stationscript" rel="noopener">on itch.io</a>.</li>
-        <li>20+ programmable machines, each running the player's real Python.</li>
-        <li>Code graded on correctness, speed, robustness and clarity; the grade changes how the machine runs.</li>
-        <li>Guided tutorial that teaches Python to people who have never coded.</li>
-        <li>24 achievements, save slots, trade ships and pirate raids.</li>
-        <li>First prototype to 1.0 release in ten days.</li>
+        <li>20+ programmable machines running the player's real Python, graded on correctness, speed, robustness and clarity.</li>
+        <li>Guided tutorial for people who have never coded; prototype to 1.0 in ten days.</li>
       </ul>
-      <div class="split">
-        <div><span class="label">I designed</span>The game concept, machine roster, progression and the code-grading model; playtesting and QA of every build.</div>
-        <div><span class="label">Agents wrote</span>The Godot scenes and scripts, the Python grading harness, tutorial system, save slots and the installer.</div>
-      </div>
+      <p class="card-split"><b>Designed</b> the concept, machine roster, progression and grading model; QA of every build. <b>Agents wrote</b> the Godot scenes, grading harness, tutorial and installer.</p>
       <div class="card-actions"><button type="button" class="btn btn-explore" data-project="stationscript" aria-haspopup="dialog">Explore StationScript</button></div>
     </article>
   </div>
@@ -266,7 +250,7 @@
 <elevenlabs-convai agent-id="[ELEVENLABS-AGENT-ID]"></elevenlabs-convai>
 <script src="assets/player.js?v=1d6338dd" defer></script>
 <script src="assets/projects.js?v=1c9ec243" defer></script>
-<script src="assets/showcase.js?v=40b6c55c" defer></script>
+<script src="assets/showcase.js?v=59e90a14" defer></script>
 <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
 </body>
 </html>
