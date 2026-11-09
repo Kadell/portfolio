@@ -190,7 +190,7 @@ h3 { margin: 0; font-weight: 600; font-size: 17px; }
 .card { position: relative; }
 .card-actions { margin-top: auto; padding-top: 6px; }
 .btn-explore { height: 40px; padding: 0 16px; font-size: 14px; background: transparent; cursor: pointer; font-family: var(--font-body); }
-.btn-explore::after { content: " \2192"; }
+.btn-explore::after { content: "\2192"; margin-left: 8px; }
 html.modal-open { overflow: hidden; }
 
 dialog.showcase, dialog.lightbox { border: 1px solid var(--line-strong); border-radius: 12px; background: var(--ground); color: var(--text); padding: 0; margin: auto; max-height: 92vh; overflow: hidden; }
