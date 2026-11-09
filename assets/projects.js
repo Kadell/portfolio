@@ -20,9 +20,9 @@ window.PORTFOLIO_PROJECTS = [
     subtitle: 'An open-source, local-first, AI-agnostic job-search agent, and the engine of my own search.',
     badges: ['Node.js', 'Markdown prompt modes', 'AI coding CLIs', 'Playwright', '130+ ATS providers', 'Markdown / TSV / YAML data', 'Zero-token scripts'],
     gallery: [
-      { id: 'overview', label: 'Overview', title: 'Career Ops — Your AI Job Search Agent', src: 'assets/infographics/careerops-overview.svg?v=be66a63a', alt: 'Six connected capabilities from Discover Jobs to Learn and Improve, with the human review step highlighted.' },
-      { id: 'workflow', label: 'Workflow', title: 'Career Ops — From Job Discovery to Outcome', src: 'assets/infographics/careerops-workflow.svg?v=a5a47371', alt: 'Ten numbered stages from job boards to feedback into targeting, with a human gate at submission and one feedback loop.' },
-      { id: 'architecture', label: 'Technical Architecture', title: 'Career Ops — Under the Hood', src: 'assets/infographics/careerops-architecture.svg?v=dbffb457', alt: 'Five groups: AI orchestration, discovery engine, AI intelligence, analytics and learning, and a canonical data layer of local files.' }
+      { id: 'overview', label: 'Overview', title: 'Career Ops — Your AI Job Search Agent', src: 'assets/infographics/careerops-overview.svg?v=dd044cf4', alt: 'Six connected capabilities from Discover Jobs to Learn and Improve, with the human review step highlighted.' },
+      { id: 'workflow', label: 'Workflow', title: 'Career Ops — From Job Discovery to Outcome', src: 'assets/infographics/careerops-workflow.svg?v=78603913', alt: 'Ten numbered stages from job boards to feedback into targeting, with a human gate at submission and one feedback loop.' },
+      { id: 'architecture', label: 'Technical Architecture', title: 'Career Ops — Under the Hood', src: 'assets/infographics/careerops-architecture.svg?v=a033a27c', alt: 'Five groups: AI orchestration, discovery engine, AI intelligence, analytics and learning, and a canonical data layer of local files.' }
     ],
     sections: [
       {

@@ -5,125 +5,125 @@
   <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6B7784"/></marker>
   <marker id="arrow-hi" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#F2A541"/></marker>
   <style>
-    .title{font:700 44px "Space Grotesk",Inter,system-ui,sans-serif;fill:#E8ECEF;letter-spacing:-.02em}
-    .eyebrow{font:500 15px "JetBrains Mono",ui-monospace,monospace;fill:#F2A541;letter-spacing:.1em}
-    .num{font:700 15px "JetBrains Mono",ui-monospace,monospace;fill:#F2A541;letter-spacing:.08em}
-    .name{font:700 21px "Space Grotesk",Inter,system-ui,sans-serif;fill:#E8ECEF}
-    .note{font:400 15px Inter,system-ui,sans-serif;fill:#B8C2CC}
-    .cap{font:400 16px "JetBrains Mono",ui-monospace,monospace;fill:#9AA5AF}
-    .badge{font:700 13px "JetBrains Mono",ui-monospace,monospace;fill:#0F1419;letter-spacing:.1em}
-    .card{fill:#161D25;stroke:#2A3540;stroke-width:1.5}
-    .card-hi{fill:#161D25;stroke:#F2A541;stroke-width:2.5}
-    .link{fill:none;stroke:#6B7784;stroke-width:2;marker-end:url(#arrow)}
-    .loop{fill:none;stroke:#F2A541;stroke-width:2;stroke-dasharray:7 6;marker-end:url(#arrow-hi)}
-    .ext{fill:#0F1419;stroke:#4A5661;stroke-width:1.5;stroke-dasharray:6 5}
+    .ig-title{font:700 44px "Space Grotesk",Inter,system-ui,sans-serif;fill:#E8ECEF;letter-spacing:-.02em}
+    .ig-eyebrow{font:500 15px "JetBrains Mono",ui-monospace,monospace;fill:#F2A541;letter-spacing:.1em}
+    .ig-num{font:700 15px "JetBrains Mono",ui-monospace,monospace;fill:#F2A541;letter-spacing:.08em}
+    .ig-name{font:700 21px "Space Grotesk",Inter,system-ui,sans-serif;fill:#E8ECEF}
+    .ig-note{font:400 15px Inter,system-ui,sans-serif;fill:#B8C2CC}
+    .ig-cap{font:400 16px "JetBrains Mono",ui-monospace,monospace;fill:#9AA5AF}
+    .ig-badge{font:700 13px "JetBrains Mono",ui-monospace,monospace;fill:#0F1419;letter-spacing:.1em}
+    .ig-card{fill:#161D25;stroke:#2A3540;stroke-width:1.5}
+    .ig-card-hi{fill:#161D25;stroke:#F2A541;stroke-width:2.5}
+    .ig-link{fill:none;stroke:#6B7784;stroke-width:2;marker-end:url(#arrow)}
+    .ig-loop{fill:none;stroke:#F2A541;stroke-width:2;stroke-dasharray:7 6;marker-end:url(#arrow-hi)}
+    .ig-ext{fill:#0F1419;stroke:#4A5661;stroke-width:1.5;stroke-dasharray:6 5}
   </style>
 </defs>
 <rect width="1600" height="900" fill="#0F1419"/>
-<text class="eyebrow" x="80" y="78">CAREER OPS · LIFECYCLE OF ONE JOB POSTING</text>
-<text class="title" x="80" y="132">Career Ops — From Job Discovery to Outcome</text>
-<text class="note" x="80" y="172" style="font-size:18px">Follow the numbers. One flow, one feedback loop, one place where a human must act.</text>
+<text class="ig-eyebrow" x="80" y="78">CAREER OPS · LIFECYCLE OF ONE JOB POSTING</text>
+<text class="ig-title" x="80" y="132">Career Ops — From Job Discovery to Outcome</text>
+<text class="ig-note" x="80" y="172" style="font-size:18px">Follow the numbers. One flow, one feedback loop, one place where a human must act.</text>
 
 <!-- Row 1 (left to right): x = 80 + i*295, w=250, y=230, h=160 -->
 <g>
-  <rect class="ext" x="80" y="230" width="250" height="160" rx="12"/>
-  <text class="num" x="104" y="262">01 · SOURCE</text>
-  <text class="name" x="104" y="296">Job Boards /</text>
-  <text class="name" x="104" y="322">ATS APIs</text>
-  <text class="note" x="104" y="352">Greenhouse, Lever, Ashby,</text>
-  <text class="note" x="104" y="372">Workday… 130+ providers</text>
+  <rect class="ig-ext" x="80" y="230" width="250" height="160" rx="12"/>
+  <text class="ig-num" x="104" y="262">01 · SOURCE</text>
+  <text class="ig-name" x="104" y="296">Job Boards /</text>
+  <text class="ig-name" x="104" y="322">ATS APIs</text>
+  <text class="ig-note" x="104" y="352">Greenhouse, Lever, Ashby,</text>
+  <text class="ig-note" x="104" y="372">Workday… 130+ providers</text>
 </g>
-<line class="link" x1="336" y1="310" x2="368" y2="310"/>
+<line class="ig-link" x1="336" y1="310" x2="368" y2="310"/>
 <g>
-  <rect class="card" x="375" y="230" width="250" height="160" rx="12"/>
-  <text class="num" x="399" y="262">02</text>
-  <text class="name" x="399" y="296">Discovery &amp;</text>
-  <text class="name" x="399" y="322">Deduplication</text>
-  <text class="note" x="399" y="352">Public APIs only, zero LLM</text>
-  <text class="note" x="399" y="372">tokens, scan-history ledger</text>
+  <rect class="ig-card" x="375" y="230" width="250" height="160" rx="12"/>
+  <text class="ig-num" x="399" y="262">02</text>
+  <text class="ig-name" x="399" y="296">Discovery &amp;</text>
+  <text class="ig-name" x="399" y="322">Deduplication</text>
+  <text class="ig-note" x="399" y="352">Public APIs only, zero LLM</text>
+  <text class="ig-note" x="399" y="372">tokens, scan-history ledger</text>
 </g>
-<line class="link" x1="631" y1="310" x2="663" y2="310"/>
+<line class="ig-link" x1="631" y1="310" x2="663" y2="310"/>
 <g>
-  <rect class="card" x="670" y="230" width="250" height="160" rx="12"/>
-  <text class="num" x="694" y="262">03</text>
-  <text class="name" x="694" y="296">Job Pipeline</text>
-  <text class="note" x="694" y="352">Inbox of pending URLs,</text>
-  <text class="note" x="694" y="372">filtered by title and location</text>
+  <rect class="ig-card" x="670" y="230" width="250" height="160" rx="12"/>
+  <text class="ig-num" x="694" y="262">03</text>
+  <text class="ig-name" x="694" y="296">Job Pipeline</text>
+  <text class="ig-note" x="694" y="352">Inbox of pending URLs,</text>
+  <text class="ig-note" x="694" y="372">filtered by title and location</text>
 </g>
-<line class="link" x1="926" y1="310" x2="958" y2="310"/>
+<line class="ig-link" x1="926" y1="310" x2="958" y2="310"/>
 <g>
-  <rect class="card" x="965" y="230" width="250" height="160" rx="12"/>
-  <text class="num" x="989" y="262">04</text>
-  <text class="name" x="989" y="296">Posting</text>
-  <text class="name" x="989" y="322">Verification</text>
-  <text class="note" x="989" y="352">Liveness: API → browser →</text>
-  <text class="note" x="989" y="372">classifier. Uncertain ≠ closed</text>
+  <rect class="ig-card" x="965" y="230" width="250" height="160" rx="12"/>
+  <text class="ig-num" x="989" y="262">04</text>
+  <text class="ig-name" x="989" y="296">Posting</text>
+  <text class="ig-name" x="989" y="322">Verification</text>
+  <text class="ig-note" x="989" y="352">Liveness: API → browser →</text>
+  <text class="ig-note" x="989" y="372">classifier. Uncertain ≠ closed</text>
 </g>
-<line class="link" x1="1221" y1="310" x2="1253" y2="310"/>
+<line class="ig-link" x1="1221" y1="310" x2="1253" y2="310"/>
 <g>
-  <rect class="card" x="1260" y="230" width="250" height="160" rx="12"/>
-  <text class="num" x="1284" y="262">05</text>
-  <text class="name" x="1284" y="296">AI Evaluation</text>
-  <text class="name" x="1284" y="322">&amp; Scoring</text>
-  <text class="note" x="1284" y="352">A–H blocks, 1–5 score,</text>
-  <text class="note" x="1284" y="372">archived JD in the report</text>
+  <rect class="ig-card" x="1260" y="230" width="250" height="160" rx="12"/>
+  <text class="ig-num" x="1284" y="262">05</text>
+  <text class="ig-name" x="1284" y="296">AI Evaluation</text>
+  <text class="ig-name" x="1284" y="322">&amp; Scoring</text>
+  <text class="ig-note" x="1284" y="352">A–H blocks, 1–5 score,</text>
+  <text class="ig-note" x="1284" y="372">archived JD in the report</text>
 </g>
 
 <!-- turn down from 05 to 06 -->
-<path class="link" d="M1385 396v62"/>
+<path class="ig-link" d="M1385 396v62"/>
 
 <!-- Row 2 (right to left): y=465, h=160 -->
 <g>
-  <rect class="card" x="1260" y="465" width="250" height="160" rx="12"/>
-  <text class="num" x="1284" y="497">06</text>
-  <text class="name" x="1284" y="531">CV / Cover Letter</text>
-  <text class="name" x="1284" y="557">Generation</text>
-  <text class="note" x="1284" y="587">Fact gate: every claim must</text>
-  <text class="note" x="1284" y="607">trace to the source CV</text>
+  <rect class="ig-card" x="1260" y="465" width="250" height="160" rx="12"/>
+  <text class="ig-num" x="1284" y="497">06</text>
+  <text class="ig-name" x="1284" y="531">CV / Cover Letter</text>
+  <text class="ig-name" x="1284" y="557">Generation</text>
+  <text class="ig-note" x="1284" y="587">Fact gate: every claim must</text>
+  <text class="ig-note" x="1284" y="607">trace to the source CV</text>
 </g>
-<line class="link" x1="1254" y1="545" x2="1222" y2="545"/>
+<line class="ig-link" x1="1254" y1="545" x2="1222" y2="545"/>
 <g>
-  <rect class="card-hi" x="965" y="465" width="250" height="160" rx="12"/>
+  <rect class="ig-card-hi" x="965" y="465" width="250" height="160" rx="12"/>
   <rect x="1040" y="451" width="100" height="26" rx="13" fill="#F2A541"/>
-  <text class="badge" x="1090" y="469" text-anchor="middle">HUMAN GATE</text>
-  <text class="num" x="989" y="497">07</text>
-  <text class="name" x="989" y="531">Human Review</text>
-  <text class="name" x="989" y="557">&amp; Submission</text>
-  <text class="note" x="989" y="587">Forms are pre-filled, then</text>
-  <text class="note" x="989" y="607">the tool stops. You click Submit.</text>
+  <text class="ig-badge" x="1090" y="469" text-anchor="middle">HUMAN GATE</text>
+  <text class="ig-num" x="989" y="497">07</text>
+  <text class="ig-name" x="989" y="531">Human Review</text>
+  <text class="ig-name" x="989" y="557">&amp; Submission</text>
+  <text class="ig-note" x="989" y="587">Forms are pre-filled, then</text>
+  <text class="ig-note" x="989" y="607">the tool stops. You click Submit.</text>
 </g>
-<line class="link" x1="959" y1="545" x2="927" y2="545"/>
+<line class="ig-link" x1="959" y1="545" x2="927" y2="545"/>
 <g>
-  <rect class="card" x="670" y="465" width="250" height="160" rx="12"/>
-  <text class="num" x="694" y="497">08</text>
-  <text class="name" x="694" y="531">Application</text>
-  <text class="name" x="694" y="557">Tracking</text>
-  <text class="note" x="694" y="587">Canonical tracker, status</text>
-  <text class="note" x="694" y="607">ledger, follow-ups, interviews</text>
+  <rect class="ig-card" x="670" y="465" width="250" height="160" rx="12"/>
+  <text class="ig-num" x="694" y="497">08</text>
+  <text class="ig-name" x="694" y="531">Application</text>
+  <text class="ig-name" x="694" y="557">Tracking</text>
+  <text class="ig-note" x="694" y="587">Canonical tracker, status</text>
+  <text class="ig-note" x="694" y="607">ledger, follow-ups, interviews</text>
 </g>
-<line class="link" x1="664" y1="545" x2="632" y2="545"/>
+<line class="ig-link" x1="664" y1="545" x2="632" y2="545"/>
 <g>
-  <rect class="card" x="375" y="465" width="250" height="160" rx="12"/>
-  <text class="num" x="399" y="497">09</text>
-  <text class="name" x="399" y="531">Outcomes &amp;</text>
-  <text class="name" x="399" y="557">Analytics</text>
-  <text class="note" x="399" y="587">Funnel velocity, score</text>
-  <text class="note" x="399" y="607">calibration, rejection patterns</text>
+  <rect class="ig-card" x="375" y="465" width="250" height="160" rx="12"/>
+  <text class="ig-num" x="399" y="497">09</text>
+  <text class="ig-name" x="399" y="531">Outcomes &amp;</text>
+  <text class="ig-name" x="399" y="557">Analytics</text>
+  <text class="ig-note" x="399" y="587">Funnel velocity, score</text>
+  <text class="ig-note" x="399" y="607">calibration, rejection patterns</text>
 </g>
-<line class="link" x1="369" y1="545" x2="337" y2="545"/>
+<line class="ig-link" x1="369" y1="545" x2="337" y2="545"/>
 <g>
-  <rect class="card" x="80" y="465" width="250" height="160" rx="12"/>
-  <text class="num" x="104" y="497">10</text>
-  <text class="name" x="104" y="531">Feedback Into</text>
-  <text class="name" x="104" y="557">Future Targeting</text>
-  <text class="note" x="104" y="587">Profile and portal config</text>
-  <text class="note" x="104" y="607">change only with approval</text>
+  <rect class="ig-card" x="80" y="465" width="250" height="160" rx="12"/>
+  <text class="ig-num" x="104" y="497">10</text>
+  <text class="ig-name" x="104" y="531">Feedback Into</text>
+  <text class="ig-name" x="104" y="557">Future Targeting</text>
+  <text class="ig-note" x="104" y="587">Profile and portal config</text>
+  <text class="ig-note" x="104" y="607">change only with approval</text>
 </g>
 
 <!-- feedback loop: from 10 left side, around the left margin, into 02 -->
-<path class="loop" d="M80 545H44V310H74"/>
-<text class="cap" x="80" y="680" fill="#F2A541">↺ feedback loop: what you learn in 09–10 changes which boards 01 scans and what 02 keeps</text>
+<path class="ig-loop" d="M80 545H44V310H74"/>
+<text class="ig-cap" x="80" y="680" fill="#F2A541">↺ feedback loop: what you learn in 09–10 changes which boards 01 scans and what 02 keeps</text>
 
-<text class="cap" x="80" y="790">Stages 01–04 and 08–10 run as deterministic scripts with no model involved.</text>
-<text class="cap" x="80" y="820">Stages 05–06 are the only places LLM tokens are spent: on judgment and writing.</text>
+<text class="ig-cap" x="80" y="790">Stages 01–04 and 08–10 run as deterministic scripts with no model involved.</text>
+<text class="ig-cap" x="80" y="820">Stages 05–06 are the only places LLM tokens are spent: on judgment and writing.</text>
 </svg>

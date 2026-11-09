@@ -5,121 +5,121 @@
   <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6B7784"/></marker>
   <marker id="arrow-hi" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#F2A541"/></marker>
   <style>
-    .title{font:700 44px "Space Grotesk",Inter,system-ui,sans-serif;fill:#E8ECEF;letter-spacing:-.02em}
-    .eyebrow{font:500 15px "JetBrains Mono",ui-monospace,monospace;fill:#F2A541;letter-spacing:.1em}
-    .grp{font:700 14px "JetBrains Mono",ui-monospace,monospace;fill:#F2A541;letter-spacing:.1em}
-    .name{font:700 22px "Space Grotesk",Inter,system-ui,sans-serif;fill:#E8ECEF}
-    .item{font:400 15px Inter,system-ui,sans-serif;fill:#D5DCE3}
-    .chip{font:500 14px "JetBrains Mono",ui-monospace,monospace;fill:#E8ECEF}
-    .cap{font:400 15px "JetBrains Mono",ui-monospace,monospace;fill:#9AA5AF}
-    .edge{font:400 14px "JetBrains Mono",ui-monospace,monospace;fill:#9AA5AF}
-    .badge{font:700 13px "JetBrains Mono",ui-monospace,monospace;fill:#0F1419;letter-spacing:.1em}
-    .box{fill:#161D25;stroke:#2A3540;stroke-width:1.5}
-    .box-hi{fill:#161D25;stroke:#F2A541;stroke-width:2}
-    .chipbox{fill:#0F1419;stroke:#4A5661;stroke-width:1.5}
-    .chipbox-d{fill:#0F1419;stroke:#4A5661;stroke-width:1.5;stroke-dasharray:5 4}
-    .ext{fill:none;stroke:#4A5661;stroke-width:1.5;stroke-dasharray:6 5}
-    .link{fill:none;stroke:#6B7784;stroke-width:2;marker-end:url(#arrow)}
-    .link2{fill:none;stroke:#6B7784;stroke-width:2;marker-start:url(#arrow);marker-end:url(#arrow)}
-    .loop{fill:none;stroke:#F2A541;stroke-width:2;stroke-dasharray:7 6;marker-end:url(#arrow-hi)}
-    .bullet{fill:#F2A541}
+    .ig-title{font:700 44px "Space Grotesk",Inter,system-ui,sans-serif;fill:#E8ECEF;letter-spacing:-.02em}
+    .ig-eyebrow{font:500 15px "JetBrains Mono",ui-monospace,monospace;fill:#F2A541;letter-spacing:.1em}
+    .ig-grp{font:700 14px "JetBrains Mono",ui-monospace,monospace;fill:#F2A541;letter-spacing:.1em}
+    .ig-name{font:700 22px "Space Grotesk",Inter,system-ui,sans-serif;fill:#E8ECEF}
+    .ig-item{font:400 15px Inter,system-ui,sans-serif;fill:#D5DCE3}
+    .ig-chip{font:500 14px "JetBrains Mono",ui-monospace,monospace;fill:#E8ECEF}
+    .ig-cap{font:400 15px "JetBrains Mono",ui-monospace,monospace;fill:#9AA5AF}
+    .ig-edge{font:400 14px "JetBrains Mono",ui-monospace,monospace;fill:#9AA5AF}
+    .ig-badge{font:700 13px "JetBrains Mono",ui-monospace,monospace;fill:#0F1419;letter-spacing:.1em}
+    .ig-box{fill:#161D25;stroke:#2A3540;stroke-width:1.5}
+    .ig-box-hi{fill:#161D25;stroke:#F2A541;stroke-width:2}
+    .ig-chipbox{fill:#0F1419;stroke:#4A5661;stroke-width:1.5}
+    .ig-chipbox-d{fill:#0F1419;stroke:#4A5661;stroke-width:1.5;stroke-dasharray:5 4}
+    .ig-ext{fill:none;stroke:#4A5661;stroke-width:1.5;stroke-dasharray:6 5}
+    .ig-link{fill:none;stroke:#6B7784;stroke-width:2;marker-end:url(#arrow)}
+    .ig-link2{fill:none;stroke:#6B7784;stroke-width:2;marker-start:url(#arrow);marker-end:url(#arrow)}
+    .ig-loop{fill:none;stroke:#F2A541;stroke-width:2;stroke-dasharray:7 6;marker-end:url(#arrow-hi)}
+    .ig-bullet{fill:#F2A541}
   </style>
 </defs>
 <rect width="1600" height="900" fill="#0F1419"/>
-<text class="eyebrow" x="80" y="78">CAREER OPS · SYSTEM ARCHITECTURE</text>
-<text class="title" x="80" y="132">Career Ops — Under the Hood</text>
-<text class="item" x="80" y="170" style="font-size:18px;fill:#B8C2CC">No daemon, no database of record. The AI CLI is the orchestrator and local files are the message bus.</text>
+<text class="ig-eyebrow" x="80" y="78">CAREER OPS · SYSTEM ARCHITECTURE</text>
+<text class="ig-title" x="80" y="132">Career Ops — Under the Hood</text>
+<text class="ig-item" x="80" y="170" style="font-size:18px;fill:#B8C2CC">No daemon, no database of record. The AI CLI is the orchestrator and local files are the message bus.</text>
 
 <!-- A · AI Orchestration (top centre) -->
 <g>
-  <rect class="box-hi" x="500" y="205" width="600" height="150" rx="12"/>
-  <text class="grp" x="524" y="236">A · AI ORCHESTRATION</text>
-  <text class="name" x="524" y="266">AI coding CLI + skill router</text>
-  <rect class="chipbox" x="524" y="286" width="150" height="34" rx="17"/><text class="chip" x="599" y="308" text-anchor="middle">Markdown modes</text>
-  <rect class="chipbox" x="686" y="286" width="170" height="34" rx="17"/><text class="chip" x="771" y="308" text-anchor="middle">Headless workers</text>
-  <rect class="chipbox" x="868" y="286" width="208" height="34" rx="17"/><text class="chip" x="972" y="308" text-anchor="middle">Any CLI: Claude, Codex…</text>
+  <rect class="ig-box-hi" x="500" y="205" width="600" height="150" rx="12"/>
+  <text class="ig-grp" x="524" y="236">A · AI ORCHESTRATION</text>
+  <text class="ig-name" x="524" y="266">AI coding CLI + skill router</text>
+  <rect class="ig-chipbox" x="524" y="286" width="150" height="34" rx="17"/><text class="ig-chip" x="599" y="308" text-anchor="middle">Markdown modes</text>
+  <rect class="ig-chipbox" x="686" y="286" width="170" height="34" rx="17"/><text class="ig-chip" x="771" y="308" text-anchor="middle">Headless workers</text>
+  <rect class="ig-chipbox" x="868" y="286" width="208" height="34" rx="17"/><text class="ig-chip" x="972" y="308" text-anchor="middle">Any CLI: Claude, Codex…</text>
 </g>
 <!-- human gate badge -->
 <g>
   <rect x="1130" y="222" width="390" height="116" rx="12" fill="#0F1419" stroke="#F2A541" stroke-width="1.5"/>
   <rect x="1150" y="208" width="112" height="26" rx="13" fill="#F2A541"/>
-  <text class="badge" x="1206" y="226" text-anchor="middle">HUMAN GATES</text>
-  <text class="item" x="1150" y="266">Submit an application</text>
-  <text class="item" x="1150" y="290">Change a tracker status</text>
-  <text class="item" x="1150" y="314">Edit the profile or CV · Update the system</text>
+  <text class="ig-badge" x="1206" y="226" text-anchor="middle">HUMAN GATES</text>
+  <text class="ig-item" x="1150" y="266">Submit an application</text>
+  <text class="ig-item" x="1150" y="290">Change a tracker status</text>
+  <text class="ig-item" x="1150" y="314">Edit the profile or CV · Update the system</text>
 </g>
-<line class="link" x1="1100" y1="280" x2="1124" y2="280" style="marker-end:none"/>
+<line class="ig-link" x1="1100" y1="280" x2="1124" y2="280" style="marker-end:none"/>
 
 <!-- arrows from A down to B, C, E -->
-<path class="link" d="M560 355v30H300v38"/>
-<path class="link" d="M800 355v68"/>
-<path class="link" d="M1040 355v30h260v38"/>
-<text class="edge" x="820" y="374">spawns workers · runs scripts</text>
+<path class="ig-link" d="M560 355v30H300v38"/>
+<path class="ig-link" d="M800 355v68"/>
+<path class="ig-link" d="M1040 355v30h260v38"/>
+<text class="ig-edge" x="818" y="378">spawns workers · runs scripts</text>
 
 <!-- external boundaries captions -->
-<text class="edge" x="80" y="412">⇠ public ATS APIs · job boards · SSRF + IP guards</text>
-<text class="edge" x="580" y="412">⇠ LLM providers · PII interceptor on every outbound call</text>
+<text class="ig-edge" x="318" y="412">⇠ public ATS APIs (SSRF + IP guards)</text>
+<text class="ig-edge" x="818" y="412">⇠ LLM providers (PII interceptor)</text>
 
 <!-- B · Discovery Engine -->
 <g>
-  <rect class="box" x="80" y="430" width="440" height="230" rx="12"/>
-  <text class="grp" x="104" y="462">B · DISCOVERY ENGINE</text>
-  <text class="name" x="104" y="492">Zero-token scanning</text>
-  <circle class="bullet" cx="110" cy="522" r="3"/><text class="item" x="124" y="527">131 provider modules over public APIs and boards</text>
-  <circle class="bullet" cx="110" cy="550" r="3"/><text class="item" x="124" y="555">HTTP scan, title and location filters, dedup ledger</text>
-  <circle class="bullet" cx="110" cy="578" r="3"/><text class="item" x="124" y="583">Liveness verification: API → browser → classifier</text>
-  <circle class="bullet" cx="110" cy="606" r="3"/><text class="item" x="124" y="611">Aggregator listings need employer confirmation</text>
-  <circle class="bullet" cx="110" cy="634" r="3"/><text class="item" x="124" y="639">Playwright only where no public API exists</text>
+  <rect class="ig-box" x="80" y="430" width="440" height="230" rx="12"/>
+  <text class="ig-grp" x="104" y="462">B · DISCOVERY ENGINE</text>
+  <text class="ig-name" x="104" y="492">Zero-token scanning</text>
+  <circle class="ig-bullet" cx="110" cy="522" r="3"/><text class="ig-item" x="124" y="527">131 provider modules over public APIs and boards</text>
+  <circle class="ig-bullet" cx="110" cy="550" r="3"/><text class="ig-item" x="124" y="555">HTTP scan, title and location filters, dedup ledger</text>
+  <circle class="ig-bullet" cx="110" cy="578" r="3"/><text class="ig-item" x="124" y="583">Liveness verification: API → browser → classifier</text>
+  <circle class="ig-bullet" cx="110" cy="606" r="3"/><text class="ig-item" x="124" y="611">Aggregator listings need employer confirmation</text>
+  <circle class="ig-bullet" cx="110" cy="634" r="3"/><text class="ig-item" x="124" y="639">Playwright only where no public API exists</text>
 </g>
 
 <!-- C · AI Intelligence -->
 <g>
-  <rect class="box" x="580" y="430" width="440" height="230" rx="12"/>
-  <text class="grp" x="604" y="462">C · AI INTELLIGENCE</text>
-  <text class="name" x="604" y="492">Judgment and writing only</text>
-  <circle class="bullet" cx="610" cy="522" r="3"/><text class="item" x="624" y="527">Backends: Claude · Gemini · OpenAI-compatible · Ollama</text>
-  <circle class="bullet" cx="610" cy="550" r="3"/><text class="item" x="624" y="555">A–H evaluation with a 1–5 score and posting-legitimacy check</text>
-  <circle class="bullet" cx="610" cy="578" r="3"/><text class="item" x="624" y="583">CV tailoring, cover letters, form answers</text>
-  <circle class="bullet" cx="610" cy="606" r="3"/><text class="item" x="624" y="611">Fact gates: a claim must trace to the source CV or it is cut</text>
-  <circle class="bullet" cx="610" cy="634" r="3"/><text class="item" x="624" y="639">Job postings are data, never instructions</text>
+  <rect class="ig-box" x="580" y="430" width="440" height="230" rx="12"/>
+  <text class="ig-grp" x="604" y="462">C · AI INTELLIGENCE</text>
+  <text class="ig-name" x="604" y="492">Judgment and writing only</text>
+  <circle class="ig-bullet" cx="610" cy="522" r="3"/><text class="ig-item" x="624" y="527">Backends: Claude · Gemini · OpenAI-compatible · Ollama</text>
+  <circle class="ig-bullet" cx="610" cy="550" r="3"/><text class="ig-item" x="624" y="555">A–H evaluation with a 1–5 score and posting-legitimacy check</text>
+  <circle class="ig-bullet" cx="610" cy="578" r="3"/><text class="ig-item" x="624" y="583">CV tailoring, cover letters, form answers</text>
+  <circle class="ig-bullet" cx="610" cy="606" r="3"/><text class="ig-item" x="624" y="611">Fact gates: a claim must trace to the source CV or it is cut</text>
+  <circle class="ig-bullet" cx="610" cy="634" r="3"/><text class="ig-item" x="624" y="639">Job postings are data, never instructions</text>
 </g>
 
 <!-- E · Analytics & Learning -->
 <g>
-  <rect class="box" x="1080" y="430" width="440" height="230" rx="12"/>
-  <text class="grp" x="1104" y="462">E · ANALYTICS &amp; LEARNING</text>
-  <text class="name" x="1104" y="492">Zero-token, read-only scripts</text>
-  <circle class="bullet" cx="1110" cy="522" r="3"/><text class="item" x="1124" y="527">Funnel analysis and stage velocity</text>
-  <circle class="bullet" cx="1110" cy="550" r="3"/><text class="item" x="1124" y="555">Score calibration against real interview outcomes</text>
-  <circle class="bullet" cx="1110" cy="578" r="3"/><text class="item" x="1124" y="583">Outcome tracking, rejection and repost patterns</text>
-  <circle class="bullet" cx="1110" cy="606" r="3"/><text class="item" x="1124" y="611">Skill-gap map from the postings you pursued</text>
-  <circle class="bullet" cx="1110" cy="634" r="3"/><text class="item" x="1124" y="639">Proposes profile changes; you approve each one</text>
+  <rect class="ig-box" x="1080" y="430" width="440" height="230" rx="12"/>
+  <text class="ig-grp" x="1104" y="462">E · ANALYTICS &amp; LEARNING</text>
+  <text class="ig-name" x="1104" y="492">Zero-token, read-only scripts</text>
+  <circle class="ig-bullet" cx="1110" cy="522" r="3"/><text class="ig-item" x="1124" y="527">Funnel analysis and stage velocity</text>
+  <circle class="ig-bullet" cx="1110" cy="550" r="3"/><text class="ig-item" x="1124" y="555">Score calibration against real interview outcomes</text>
+  <circle class="ig-bullet" cx="1110" cy="578" r="3"/><text class="ig-item" x="1124" y="583">Outcome tracking, rejection and repost patterns</text>
+  <circle class="ig-bullet" cx="1110" cy="606" r="3"/><text class="ig-item" x="1124" y="611">Skill-gap map from the postings you pursued</text>
+  <circle class="ig-bullet" cx="1110" cy="634" r="3"/><text class="ig-item" x="1124" y="639">Proposes profile changes; you approve each one</text>
 </g>
 
 <!-- feedback from E back to A -->
-<path class="loop" d="M1420 430V380h120V300h-8"/>
-<text class="edge" x="1420" y="372" fill="#F2A541" text-anchor="end">user-approved improvements ↑</text>
+<path class="ig-loop" d="M1520 520h52V280h-44"/>
+<text class="ig-edge" x="1510" y="412" fill="#F2A541" text-anchor="end">approved improvements ↑</text>
 
 <!-- arrows from B, C, E down to D -->
-<path class="link2" d="M300 660v50"/>
-<path class="link2" d="M800 660v50"/>
-<path class="link2" d="M1300 660v50"/>
-<text class="edge" x="330" y="692">read / write files</text>
-<text class="edge" x="830" y="692">read / write files</text>
-<text class="edge" x="1330" y="692">read only</text>
+<path class="ig-link2" d="M300 660v50"/>
+<path class="ig-link2" d="M800 660v50"/>
+<path class="ig-link2" d="M1300 660v50"/>
+<text class="ig-edge" x="330" y="692">read / write files</text>
+<text class="ig-edge" x="830" y="692">read / write files</text>
+<text class="ig-edge" x="1330" y="692">read only</text>
 
 <!-- D · Canonical Data Layer (bottom, wide) -->
 <g>
-  <rect class="box" x="80" y="716" width="1440" height="124" rx="12"/>
-  <text class="grp" x="104" y="748">D · CANONICAL DATA LAYER</text>
-  <text class="name" x="104" y="778">Local Markdown, TSV, YAML and JSON</text>
-  <rect class="chipbox" x="104" y="796" width="200" height="30" rx="15"/><text class="chip" x="204" y="816" text-anchor="middle">applications.md tracker</text>
-  <rect class="chipbox" x="316" y="796" width="190" height="30" rx="15"/><text class="chip" x="411" y="816" text-anchor="middle">reports/NNN-*.md</text>
-  <rect class="chipbox" x="518" y="796" width="160" height="30" rx="15"/><text class="chip" x="598" y="816" text-anchor="middle">status-log.tsv</text>
-  <rect class="chipbox" x="690" y="796" width="150" height="30" rx="15"/><text class="chip" x="765" y="816" text-anchor="middle">pipeline.md</text>
-  <rect class="chipbox" x="852" y="796" width="160" height="30" rx="15"/><text class="chip" x="932" y="816" text-anchor="middle">scan-history.tsv</text>
-  <rect class="chipbox" x="1024" y="796" width="200" height="30" rx="15"/><text class="chip" x="1124" y="816" text-anchor="middle">cv.md · profile.yml</text>
-  <rect class="chipbox-d" x="1236" y="796" width="210" height="30" rx="15"/><text class="chip" x="1341" y="816" text-anchor="middle" fill="#9AA5AF">SQLite index · derived</text>
-  <text class="edge" x="1496" y="748" text-anchor="end">human-readable files are the source of truth</text>
+  <rect class="ig-box" x="80" y="716" width="1440" height="124" rx="12"/>
+  <text class="ig-grp" x="104" y="748">D · CANONICAL DATA LAYER</text>
+  <text class="ig-name" x="104" y="778">Local Markdown, TSV, YAML and JSON</text>
+  <rect class="ig-chipbox" x="104" y="796" width="200" height="30" rx="15"/><text class="ig-chip" x="204" y="816" text-anchor="middle">applications.md tracker</text>
+  <rect class="ig-chipbox" x="316" y="796" width="190" height="30" rx="15"/><text class="ig-chip" x="411" y="816" text-anchor="middle">reports/NNN-*.md</text>
+  <rect class="ig-chipbox" x="518" y="796" width="160" height="30" rx="15"/><text class="ig-chip" x="598" y="816" text-anchor="middle">status-log.tsv</text>
+  <rect class="ig-chipbox" x="690" y="796" width="150" height="30" rx="15"/><text class="ig-chip" x="765" y="816" text-anchor="middle">pipeline.md</text>
+  <rect class="ig-chipbox" x="852" y="796" width="160" height="30" rx="15"/><text class="ig-chip" x="932" y="816" text-anchor="middle">scan-history.tsv</text>
+  <rect class="ig-chipbox" x="1024" y="796" width="200" height="30" rx="15"/><text class="ig-chip" x="1124" y="816" text-anchor="middle">cv.md · profile.yml</text>
+  <rect class="ig-chipbox-d" x="1236" y="796" width="210" height="30" rx="15"/><text class="ig-chip" x="1341" y="816" text-anchor="middle" fill="#9AA5AF">SQLite index · derived</text>
+  <text class="ig-edge" x="1496" y="748" text-anchor="end">human-readable files are the source of truth</text>
 </g>
 </svg>
