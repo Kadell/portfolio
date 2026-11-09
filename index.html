@@ -168,7 +168,15 @@
       </div>
     </article>
     <article class="card">
-      <div class="shot"><!-- TODO: 15s muted clip or GIF --><span>clip slot · 16:9</span></div>
+      <div class="player" data-src="assets/jarvis.mp3" data-peaks="assets/jarvis.peaks.json" aria-label="Jarvis voice demo">
+        <button class="play" type="button" aria-label="Play">
+          <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+          <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+        </button>
+        <div class="wave" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+        <div class="time"><span class="cur">0:00</span> / <span class="dur">0:11</span></div>
+      </div>
+      <p class="player-caption">Voice demo, 11 seconds. Recorded from a live session.</p>
       <div class="mono">Jarvis · voice assistant · [YEAR]</div>
       <h3>Voice assistant that delegates tasks to Claude Code headless and reads results aloud</h3>
       <p>[ONE-LINE DESCRIPTION FROM GEORGE]</p>
@@ -224,6 +232,7 @@
         set a conversation cap, and paste its id below.
      2. Script is deferred so it never blocks first paint. -->
 <elevenlabs-convai agent-id="[ELEVENLABS-AGENT-ID]"></elevenlabs-convai>
+<script src="assets/player.js" defer></script>
 <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
 </body>
 </html>

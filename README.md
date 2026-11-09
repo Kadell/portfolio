@@ -28,7 +28,7 @@ node tools/build-pdf.mjs
 - `[YOUR-DOMAIN]` in `index.html` (OG tags, JSON-LD)
 - `[YOUR-GITHUB]` footer link
 - `[ELEVENLABS-AGENT-ID]` widget
-- Jarvis card copy and both screenshot slots
+- Jarvis card copy and the career-ops screenshot slot
 
 ## Rebuild the link-preview image
 
@@ -36,4 +36,12 @@ node tools/build-pdf.mjs
 
 ```bash
 node tools/build-og.mjs
+```
+
+## Jarvis voice demo
+
+`assets/jarvis.mp3` plays through a small waveform player (`assets/player.js`, styles in `styles.css`). The bars are precomputed so the browser never decodes audio to draw them; after replacing the recording, run:
+
+```bash
+node tools/build-waveform.mjs
 ```
