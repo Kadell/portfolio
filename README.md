@@ -55,3 +55,7 @@ node tools/build-og.mjs
 ```bash
 node tools/build-waveform.mjs
 ```
+
+## Project showcases (AI agent builds)
+
+Each card's **Explore** button opens one reusable modal (`assets/showcase.js`, a native `<dialog>`) rendered from `assets/projects.js`. To add a project: add an object there (title, subtitle, badges, sections, optional `gallery` of 16:9 SVGs, optional `screenshots`, authorship, links) and give the card a button with `data-project="<id>"`. The Career Ops infographics live in `assets/infographics/` as hand-written SVGs on a 1600×900 canvas; they use the site's palette and fonts and are inlined at runtime so the fonts apply. Deep link: `/#project=careerops`.

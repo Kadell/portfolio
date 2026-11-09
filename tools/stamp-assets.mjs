@@ -1,30 +1,49 @@
 // Appends a content hash (?v=xxxxxxxx) to every reference to a cacheable
-// asset in the HTML files, so a changed file gets a new URL and neither the
-// browser nor Cloudflare's edge can keep serving the old one. Idempotent;
-// run after editing styles.css, assets/*.js, or replacing an asset file.
+// asset, so a changed file gets a new URL and neither the browser nor
+// Cloudflare's edge can keep serving the old one. Idempotent; run after
+// editing styles.css or anything under assets/, and before committing.
+//
+// Two passes: first the JS config files that reference assets (their own hash
+// changes when a reference inside them changes), then the HTML pages.
 import { createHash } from 'node:crypto';
-import { readFileSync, writeFileSync, existsSync } from 'node:fs';
-import { dirname, resolve } from 'node:path';
+import { readFileSync, writeFileSync, existsSync, readdirSync, statSync } from 'node:fs';
+import { dirname, resolve, relative, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const ASSETS = ['styles.css', 'assets/player.js', 'assets/jarvis.mp3', 'assets/jarvis.peaks.json', 'assets/og.png', 'assets/George_Kulick_Resume.pdf', 'assets/stationscript-factory.webp'];
-const PAGES = ['index.html', '404.html', 'resume/index.html'];
+
+function walk(dir) {
+  const out = [];
+  for (const name of readdirSync(dir)) {
+    const p = join(dir, name);
+    if (statSync(p).isDirectory()) out.push(...walk(p));
+    else out.push(relative(root, p).split('\\').join('/'));
+  }
+  return out;
+}
+
+const ASSETS = ['styles.css', ...walk(resolve(root, 'assets'))];
+const CONFIGS = ['assets/projects.js'];                       // stamped first
+const PAGES = ['index.html', '404.html', 'resume/index.html']; // stamped second
 
 const hash = p => createHash('sha256').update(readFileSync(resolve(root, p))).digest('hex').slice(0, 8);
-const stamps = Object.fromEntries(ASSETS.filter(a => existsSync(resolve(root, a))).map(a => [a, hash(a)]));
+const esc = s => s.replace(/[.$]/g, '\\$&');
 
-for (const page of PAGES) {
+function stampFile(page, assets) {
   const file = resolve(root, page);
-  if (!existsSync(file)) continue;
-  let html = readFileSync(file, 'utf8');
-  const before = html;
-  for (const [asset, v] of Object.entries(stamps)) {
-    const name = asset.split('/').pop().replace(/[.$]/g, '\\$&');
-    // match the bare filename at the end of an href/src/data-*/content attribute value, with or without an old ?v=
+  if (!existsSync(file)) return;
+  let text = readFileSync(file, 'utf8');
+  const before = text;
+  for (const asset of assets) {
+    if (asset === page) continue;
+    const name = esc(asset.split('/').pop());
+    // the bare filename at the end of an attribute value or JS string, with or without an old ?v=
     const re = new RegExp('(' + name + ')(\\?v=[0-9a-f]{8})?(?=["\'])', 'g');
-    html = html.replace(re, '$1?v=' + v);
+    text = text.replace(re, '$1?v=' + hash(asset));
   }
-  if (html !== before) { writeFileSync(file, html); console.log(`stamped ${page}`); }
+  if (text !== before) { writeFileSync(file, text); console.log(`stamped ${page}`); }
 }
-console.log(JSON.stringify(stamps));
+
+for (const cfg of CONFIGS) stampFile(cfg, ASSETS.filter(a => a !== cfg));
+for (const page of PAGES) stampFile(page, ASSETS);
+console.log(JSON.stringify(Object.fromEntries(ASSETS.map(a => [a, hash(a)]))));

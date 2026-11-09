@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">Career Ops — Your AI Job Search Agent</title>
+<desc id="d">Six connected capabilities, left to right: Discover Jobs, Evaluate Fit, Tailor Applications, Human Reviews and Applies, Track Progress, Learn and Improve. The human step is highlighted. Footer: local-first, AI-agnostic, human-in-the-loop, 130+ ATS and job-board providers, no automated submissions.</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6B7784"/></marker>
+  <style>
+    .title{font:700 44px "Space Grotesk",Inter,system-ui,sans-serif;fill:#E8ECEF;letter-spacing:-.02em}
+    .eyebrow{font:500 15px "JetBrains Mono",ui-monospace,monospace;fill:#F2A541;letter-spacing:.1em}
+    .step{font:500 14px "JetBrains Mono",ui-monospace,monospace;fill:#9AA5AF;letter-spacing:.08em}
+    .label{font:700 22px "Space Grotesk",Inter,system-ui,sans-serif;fill:#E8ECEF}
+    .sub{font:400 15px Inter,system-ui,sans-serif;fill:#B8C2CC}
+    .pill{font:500 16px Inter,system-ui,sans-serif;fill:#E8ECEF}
+    .cap{font:400 16px "JetBrains Mono",ui-monospace,monospace;fill:#9AA5AF}
+    .badge{font:700 13px "JetBrains Mono",ui-monospace,monospace;fill:#0F1419;letter-spacing:.1em}
+    .card{fill:#161D25;stroke:#2A3540;stroke-width:1.5}
+    .card-hi{fill:#161D25;stroke:#F2A541;stroke-width:2}
+    .ico{fill:none;stroke:#F2A541;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+    .link{stroke:#6B7784;stroke-width:2;marker-end:url(#arrow)}
+    .pillbox{fill:#0F1419;stroke:#4A5661;stroke-width:1.5}
+  </style>
+</defs>
+<rect width="1600" height="900" fill="#0F1419"/>
+<text class="eyebrow" x="80" y="78">CAREER OPS · OPEN-SOURCE JOB-SEARCH AGENT</text>
+<text class="title" x="80" y="132">Career Ops — Your AI Job Search Agent</text>
+<text class="sub" x="80" y="172" style="font-size:18px">It finds and evaluates roles, drafts the application, and stops. You review and apply.</text>
+
+<!-- step cards: x = 80 + i*248, w=200, y=290, h=270 -->
+<g id="s1">
+  <rect class="card" x="80" y="290" width="200" height="270" rx="12"/>
+  <circle cx="180" cy="350" r="30" fill="#0F1419" stroke="#2A3540"/>
+  <g class="ico"><circle cx="176" cy="346" r="11"/><path d="M184 354l10 10"/></g>
+  <text class="step" x="180" y="410" text-anchor="middle">01</text>
+  <text class="label" x="180" y="446" text-anchor="middle">Discover Jobs</text>
+  <text class="sub" x="180" y="478" text-anchor="middle">130+ ATS and board</text>
+  <text class="sub" x="180" y="500" text-anchor="middle">providers, zero LLM tokens</text>
+</g>
+<line class="link" x1="286" y1="425" x2="322" y2="425"/>
+<g id="s2">
+  <rect class="card" x="328" y="290" width="200" height="270" rx="12"/>
+  <circle cx="428" cy="350" r="30" fill="#0F1419" stroke="#2A3540"/>
+  <g class="ico"><path d="M416 340h24M416 350h24M416 360h14"/><path d="M434 359l4 4 7-8"/></g>
+  <text class="step" x="428" y="410" text-anchor="middle">02</text>
+  <text class="label" x="428" y="446" text-anchor="middle">Evaluate Fit</text>
+  <text class="sub" x="428" y="478" text-anchor="middle">Structured A–H review,</text>
+  <text class="sub" x="428" y="500" text-anchor="middle">1–5 suitability score</text>
+</g>
+<line class="link" x1="534" y1="425" x2="570" y2="425"/>
+<g id="s3">
+  <rect class="card" x="576" y="290" width="200" height="270" rx="12"/>
+  <circle cx="676" cy="350" r="30" fill="#0F1419" stroke="#2A3540"/>
+  <g class="ico"><path d="M664 334h16l8 8v24h-24z"/><path d="M670 350h12M670 358h8"/></g>
+  <text class="step" x="676" y="410" text-anchor="middle">03</text>
+  <text class="label" x="676" y="446" text-anchor="middle">Tailor Applications</text>
+  <text class="sub" x="676" y="478" text-anchor="middle">CV, cover letter, form answers;</text>
+  <text class="sub" x="676" y="500" text-anchor="middle">every claim fact-checked</text>
+</g>
+<line class="link" x1="782" y1="425" x2="818" y2="425"/>
+<g id="s4">
+  <rect class="card-hi" x="824" y="290" width="200" height="270" rx="12"/>
+  <rect x="876" y="276" width="96" height="26" rx="13" fill="#F2A541"/>
+  <text class="badge" x="924" y="294" text-anchor="middle">YOU DECIDE</text>
+  <circle cx="924" cy="350" r="30" fill="#0F1419" stroke="#F2A541"/>
+  <g class="ico"><circle cx="924" cy="342" r="7"/><path d="M910 364c2-8 8-12 14-12s12 4 14 12"/></g>
+  <text class="step" x="924" y="410" text-anchor="middle">04</text>
+  <text class="label" x="924" y="446" text-anchor="middle">Human Reviews</text>
+  <text class="label" x="924" y="472" text-anchor="middle">&amp; Applies</text>
+  <text class="sub" x="924" y="504" text-anchor="middle">The tool never submits</text>
+</g>
+<line class="link" x1="1030" y1="425" x2="1066" y2="425"/>
+<g id="s5">
+  <rect class="card" x="1072" y="290" width="200" height="270" rx="12"/>
+  <circle cx="1172" cy="350" r="30" fill="#0F1419" stroke="#2A3540"/>
+  <g class="ico"><path d="M1160 362v-10M1172 362v-20M1184 362v-28"/><path d="M1156 364h32"/></g>
+  <text class="step" x="1172" y="410" text-anchor="middle">05</text>
+  <text class="label" x="1172" y="446" text-anchor="middle">Track Progress</text>
+  <text class="sub" x="1172" y="478" text-anchor="middle">Tracker, follow-ups,</text>
+  <text class="sub" x="1172" y="500" text-anchor="middle">interviews, outcomes</text>
+</g>
+<line class="link" x1="1278" y1="425" x2="1314" y2="425"/>
+<g id="s6">
+  <rect class="card" x="1320" y="290" width="200" height="270" rx="12"/>
+  <circle cx="1420" cy="350" r="30" fill="#0F1419" stroke="#2A3540"/>
+  <g class="ico"><path d="M1432 342a13 13 0 1 0 2 10"/><path d="M1434 334v10h-10"/></g>
+  <text class="step" x="1420" y="410" text-anchor="middle">06</text>
+  <text class="label" x="1420" y="446" text-anchor="middle">Learn &amp; Improve</text>
+  <text class="sub" x="1420" y="478" text-anchor="middle">Outcomes tune targeting,</text>
+  <text class="sub" x="1420" y="500" text-anchor="middle">with your approval</text>
+</g>
+
+<!-- principles -->
+<g id="pills">
+  <rect class="pillbox" x="80" y="660" width="220" height="52" rx="26"/><text class="pill" x="190" y="692" text-anchor="middle">Local-first</text>
+  <rect class="pillbox" x="320" y="660" width="220" height="52" rx="26"/><text class="pill" x="430" y="692" text-anchor="middle">AI-agnostic</text>
+  <rect class="pillbox" x="560" y="660" width="260" height="52" rx="26"/><text class="pill" x="690" y="692" text-anchor="middle">Human-in-the-loop</text>
+  <rect class="pillbox" x="840" y="660" width="340" height="52" rx="26"/><text class="pill" x="1010" y="692" text-anchor="middle">130+ ATS / job-board providers</text>
+  <rect x="1200" y="660" width="320" height="52" rx="26" fill="#0F1419" stroke="#F2A541" stroke-width="1.5"/><text class="pill" x="1360" y="692" text-anchor="middle" fill="#F2A541">No automated submissions</text>
+</g>
+<text class="cap" x="80" y="790">Runs on your machine, against your files, through the AI coding CLI you already use.</text>
+<text class="cap" x="80" y="820">Open source: github.com/santifer/career-ops</text>
+</svg>
