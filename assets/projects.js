@@ -200,7 +200,7 @@ window.PORTFOLIO_PROJECTS = [
       { src: 'assets/simplepath-demo.webp?v=b81e4990', alt: 'A third grader\'s daily checklist for Math, Reading and Writing next to an AI Teacher chat panel', caption: 'A school day is one checklist per subject, with the AI teacher a click away. Parents can review every conversation.' },
       { src: 'assets/simplepath-grade3.webp?v=f4874036', alt: 'Third-grade curriculum page listing Math 3 and Reading 3 with their unit outlines', caption: 'Every grade page lists each subject\'s whole year: 180 daily lessons per course, unit by unit.' },
       { src: 'assets/simplepath-pricing.webp?v=81b94a4f', alt: 'Pricing page with a free Grade 1 plan, monthly and annual Full Access plans and an SAT add-on marked coming soon', caption: 'One flat household price. Entitlements, not per-seat licences, decide what a family can open.' },
-      { src: 'assets/simplepath-lessons.webp?v=3fb351ad', alt: 'Marketing infographic: how lessons work as a child grows, from parent-led Pre-K to self-directed high school with the AI teacher as tutor', caption: 'How a day changes with age: the parent starts as the teacher and becomes the coach.' }
+      { src: 'assets/simplepath-lessons.webp?v=3fb351ad', position: 'top', alt: 'Marketing infographic: how lessons work as a child grows, from parent-led Pre-K to self-directed high school with the AI teacher as tutor', caption: 'How a day changes with age: the parent starts as the teacher and becomes the coach.' }
     ],
     sections: [
       {
