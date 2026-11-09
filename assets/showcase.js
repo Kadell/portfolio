@@ -73,7 +73,8 @@
   function openImage(src, alt, caption, returnTo) {
     const close = el('button', { type: 'button', class: 'sc-close', 'aria-label': 'Close enlarged view', html: '&times;' });
     close.addEventListener('click', () => lightbox.close());
-    const fig = el('figure', { class: 'lb-figure' }, [el('img', { src, alt })]);
+    const fig = el('figure', { class: 'lb-figure lb-img' }, [el('img', { src, alt })]);
+    lightbox.classList.add('is-image');
     lightbox.replaceChildren(close, fig, el('p', { class: 'lb-caption mono', text: caption || alt }));
     lightboxReturn = returnTo || null;
     lightbox.showModal();
@@ -142,6 +143,7 @@
       const close = el('button', { type: 'button', class: 'sc-close', 'aria-label': 'Close enlarged view', html: '&times;' });
       close.addEventListener('click', () => lightbox.close());
       const fig = el('figure', { class: 'lb-figure' }, [el('div', { class: 'sc-loading mono', text: 'loading…' })]);
+      lightbox.classList.remove('is-image');
       lightbox.replaceChildren(close, fig, el('p', { class: 'lb-caption mono', text: it.title }));
       lightbox.showModal();
       close.focus();
