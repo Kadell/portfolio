@@ -13,7 +13,7 @@
 <meta name="theme-color" content="#0F1419">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="styles.css?v=b79f984f">
+<link rel="stylesheet" href="styles.css?v=60a65cdd">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -177,12 +177,20 @@
         <div class="time"><span class="cur">0:00</span> / <span class="dur">0:11</span></div>
       </div>
       <p class="player-caption">Voice demo, 11 seconds. Recorded from a live session.</p>
-      <div class="mono">Jarvis · voice assistant · [YEAR]</div>
+      <div class="mono">Jarvis · voice assistant · 2026</div>
       <h3>Voice assistant that delegates tasks to Claude Code headless and reads results aloud</h3>
-      <p>[ONE-LINE DESCRIPTION FROM GEORGE]</p>
+      <ul class="card-list">
+        <li>Runs the whole voice loop locally: "hey Jarvis" wake word (openWakeWord), speech-to-text with faster-whisper and Silero end-of-speech detection, Piper text-to-speech streamed while the reply is still being generated.</li>
+        <li>Hands real computer work to Claude Code in headless mode and speaks the result; a gated builder mode lets it extend its own tool registry, with protected paths and a one-command revert.</li>
+        <li>Google Workspace by voice: calendar, Gmail across multiple accounts and send-as aliases, contacts.</li>
+        <li>Everyday tools: weather, traffic-aware directions, local business search, web research and page reading.</li>
+        <li>Voice control of a household to-do board running on a Raspberry Pi.</li>
+        <li>Same assistant from a phone: a PWA talks to a FastAPI endpoint with token auth and continues the conversation started at the desk.</li>
+        <li>Long-term memory folded into the system prompt, plus self-diagnosis from its own logs and network checks.</li>
+      </ul>
       <div class="split">
-        <div><span class="label">I designed</span>[TO CONFIRM]</div>
-        <div><span class="label">Agents wrote</span>[TO CONFIRM]</div>
+        <div><span class="label">I designed</span>Overall system design and the feature set; research and selection of the speech stack (faster-whisper, Piper, openWakeWord); QA of every build and verification that agent output matched the brief.</div>
+        <div><span class="label">Agents wrote</span>Essentially all of the code: voice pipeline, tool registry, Google integrations, builder mode, phone server.</div>
       </div>
     </article>
   </div>
