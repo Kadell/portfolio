@@ -55,7 +55,7 @@ const page = `<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Resume · George Kulick</title>
 <meta name="description" content="George Kulick, solution architect: 15 years of enterprise conversational AI delivery at LivePerson and Quiq.">
-<meta name="robots" content="noindex">
+<link rel="canonical" href="https://georgekulick.com/resume/">
 <meta property="og:title" content="Resume · George Kulick">
 <meta property="og:description" content="George Kulick, solution architect: 15 years of enterprise conversational AI delivery at LivePerson and Quiq.">
 <meta property="og:type" content="profile">
