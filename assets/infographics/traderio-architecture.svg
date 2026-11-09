@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">TraderIO — Under the Hood</title>
+<desc id="d">Four groups. Edge: TradingView and a Cloudflare tunnel that exposes one path. Service: a Python FastAPI router running as a Windows service with parser, rules, rotation, broker seam, contract resolver, dashboard and test bench. Execution: NinjaTrader 8 with two C# AddOns, Receiver and Sync. Records: Google Sheets audit and trade logs, a daily recap email and local logs. A feed loop runs from Sync back into the service.</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6B7784"/></marker>
+  <marker id="arrow-hi" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#F2A541"/></marker>
+  <style>
+    .ig-title{font:700 44px "Space Grotesk",Inter,system-ui,sans-serif;fill:#E8ECEF;letter-spacing:-.02em}
+    .ig-eyebrow{font:500 15px "JetBrains Mono",ui-monospace,monospace;fill:#F2A541;letter-spacing:.1em}
+    .ig-grp{font:700 14px "JetBrains Mono",ui-monospace,monospace;fill:#F2A541;letter-spacing:.1em}
+    .ig-name{font:700 22px "Space Grotesk",Inter,system-ui,sans-serif;fill:#E8ECEF}
+    .ig-item{font:400 15px Inter,system-ui,sans-serif;fill:#D5DCE3}
+    .ig-chip{font:500 14px "JetBrains Mono",ui-monospace,monospace;fill:#E8ECEF}
+    .ig-cap{font:400 15px "JetBrains Mono",ui-monospace,monospace;fill:#9AA5AF}
+    .ig-edge{font:400 14px "JetBrains Mono",ui-monospace,monospace;fill:#9AA5AF}
+    .ig-note{font:400 15px Inter,system-ui,sans-serif;fill:#B8C2CC}
+    .ig-card{fill:#161D25;stroke:#2A3540;stroke-width:1.5}
+    .ig-card-hi{fill:#161D25;stroke:#F2A541;stroke-width:2.5}
+    .ig-chipbox{fill:#0F1419;stroke:#2A3540;stroke-width:1}
+    .ig-link{fill:none;stroke:#6B7784;stroke-width:2;marker-end:url(#arrow)}
+    .ig-loop{fill:none;stroke:#F2A541;stroke-width:2;stroke-dasharray:7 6;marker-end:url(#arrow-hi)}
+    .ig-ext{fill:#0F1419;stroke:#4A5661;stroke-width:1.5;stroke-dasharray:6 5}
+  </style>
+</defs>
+<rect width="1600" height="900" fill="#0F1419"/>
+<text class="ig-eyebrow" x="80" y="78">TRADERIO · TECHNICAL ARCHITECTURE</text>
+<text class="ig-title" x="80" y="132">TraderIO — Under the Hood</text>
+<text class="ig-note" x="80" y="172" style="font-size:18px">Python on the routing side, C# inside the trading platform, one JSON contract between them kept in one repository so they cannot drift.</text>
+
+<!-- EDGE -->
+<g>
+  <rect class="ig-ext" x="80" y="220" width="300" height="420" rx="14"/>
+  <text class="ig-grp" x="104" y="252">EDGE · OUTSIDE</text>
+  <text class="ig-name" x="104" y="286">TradingView</text>
+  <text class="ig-item" x="104" y="314">Strategy alerts, webhook with a</text>
+  <text class="ig-item" x="104" y="334">shared-secret header</text>
+  <line x1="104" y1="360" x2="356" y2="360" stroke="#2A3540"/>
+  <text class="ig-name" x="104" y="396">Cloudflare Tunnel</text>
+  <text class="ig-item" x="104" y="424">Stable public hostname, runs as</text>
+  <text class="ig-item" x="104" y="444">a Windows service</text>
+  <text class="ig-item" x="104" y="474">Ingress publishes one anchored</text>
+  <text class="ig-item" x="104" y="494">path: the webhook. Dashboard,</text>
+  <text class="ig-item" x="104" y="514">API and test pages are refused</text>
+  <text class="ig-item" x="104" y="534">at the edge with 404</text>
+  <text class="ig-cap" x="104" y="576">unanchored regex would admit</text>
+  <text class="ig-cap" x="104" y="596">/anything/webhook/…: the ^…$</text>
+  <text class="ig-cap" x="104" y="616">anchors are load-bearing</text>
+</g>
+<line class="ig-link" x1="386" y1="430" x2="428" y2="430"/>
+
+<!-- SERVICE -->
+<g>
+  <rect class="ig-card-hi" x="435" y="220" width="560" height="420" rx="14"/>
+  <text class="ig-grp" x="459" y="252">SERVICE · PYTHON 3.12 · FASTAPI · WINDOWS SERVICE</text>
+  <text class="ig-name" x="459" y="286">The router</text>
+  <g>
+    <rect class="ig-chipbox" x="459" y="304" width="150" height="56" rx="8"/><text class="ig-chip" x="471" y="326">parser.py</text><text class="ig-cap" x="471" y="348" style="font-size:13px">fails closed</text>
+    <rect class="ig-chipbox" x="621" y="304" width="150" height="56" rx="8"/><text class="ig-chip" x="633" y="326">rules.py</text><text class="ig-cap" x="633" y="348" style="font-size:13px">YAML, per signal</text>
+    <rect class="ig-chipbox" x="783" y="304" width="188" height="56" rx="8"/><text class="ig-chip" x="795" y="326">accounts/</text><text class="ig-cap" x="795" y="348" style="font-size:13px">rotation, pure scorer</text>
+    <rect class="ig-chipbox" x="459" y="372" width="150" height="56" rx="8"/><text class="ig-chip" x="471" y="394">brokers/</text><text class="ig-cap" x="471" y="416" style="font-size:13px">seam, 3 backends</text>
+    <rect class="ig-chipbox" x="621" y="372" width="150" height="56" rx="8"/><text class="ig-chip" x="633" y="394">contracts.py</text><text class="ig-cap" x="633" y="416" style="font-size:13px">front month</text>
+    <rect class="ig-chipbox" x="783" y="372" width="188" height="56" rx="8"/><text class="ig-chip" x="795" y="394">ingest.py</text><text class="ig-cap" x="795" y="416" style="font-size:13px">sink for the Sync feed</text>
+    <rect class="ig-chipbox" x="459" y="440" width="150" height="56" rx="8"/><text class="ig-chip" x="471" y="462">static/ UI</text><text class="ig-cap" x="471" y="484" style="font-size:13px">dashboard, queue</text>
+    <rect class="ig-chipbox" x="621" y="440" width="150" height="56" rx="8"/><text class="ig-chip" x="633" y="462">testbench.py</text><text class="ig-cap" x="633" y="484" style="font-size:13px">fires real signals</text>
+    <rect class="ig-chipbox" x="783" y="440" width="188" height="56" rx="8"/><text class="ig-chip" x="795" y="462">recap</text><text class="ig-cap" x="795" y="484" style="font-size:13px">daily email</text>
+  </g>
+  <text class="ig-item" x="459" y="530">Auto-restarting service (NSSM) that starts at boot without a login.</text>
+  <text class="ig-item" x="459" y="552">Rules and static files reload without a restart; Python changes need one.</text>
+  <text class="ig-item" x="459" y="582">The TradersPost and direct-Tradovate backends still exist behind the</text>
+  <text class="ig-item" x="459" y="602">broker flag: the system replaced an n8n flow, then TradersPost, then went direct.</text>
+</g>
+<line class="ig-link" x1="1001" y1="380" x2="1043" y2="380"/>
+<path class="ig-loop" d="M1043 500h-42"/>
+<text class="ig-edge" x="1002" y="660">grey: orders out · amber dashed: account snapshots back</text>
+
+<!-- EXECUTION -->
+<g>
+  <rect class="ig-ext" x="1050" y="220" width="470" height="420" rx="14"/>
+  <text class="ig-grp" x="1074" y="252">EXECUTION · NINJATRADER 8 · C# ADDONS</text>
+  <text class="ig-name" x="1074" y="286">Receiver AddOn</text>
+  <text class="ig-item" x="1074" y="314">Listens on loopback only. Places market</text>
+  <text class="ig-item" x="1074" y="334">entry + stop, partial exits, breakeven, cancel,</text>
+  <text class="ig-item" x="1074" y="354">flatten. Ships disabled, dry-run, empty allowlist.</text>
+  <line x1="1074" y1="380" x2="1496" y2="380" stroke="#2A3540"/>
+  <text class="ig-name" x="1074" y="416">Sync AddOn</text>
+  <text class="ig-item" x="1074" y="444">Read-only. Posts a full snapshot of every</text>
+  <text class="ig-item" x="1074" y="464">connected account: balances, positions,</text>
+  <text class="ig-item" x="1074" y="484">orders, executions. Never submits anything.</text>
+  <text class="ig-cap" x="1074" y="526">Both files live in the Python repo so the</text>
+  <text class="ig-cap" x="1074" y="546">C# contract and the client that speaks it</text>
+  <text class="ig-cap" x="1074" y="566">are versioned together</text>
+  <text class="ig-cap" x="1074" y="606">Prop-firm evaluation and funded accounts</text>
+</g>
+
+<!-- RECORDS -->
+<g>
+  <rect class="ig-card" x="80" y="670" width="1440" height="110" rx="14"/>
+  <text class="ig-grp" x="104" y="702">RECORDS · OFF THE ORDER PATH</text>
+  <text class="ig-item" x="104" y="732">Google Sheets: full audit tab plus the trade log that feeds performance sheets. Logging is queued off-thread after forwarding.</text>
+  <text class="ig-item" x="104" y="756">Daily recap emailed at 17:00 ET on the session roll through the Gmail API with its own scoped OAuth token. Local logs for service, router and AddOn.</text>
+</g>
+<text class="ig-cap" x="80" y="830">~170 commits, July to August 2026 · 765 unit tests · 46 test modules · scoring, parsing, rules, ownership and sync logic tested without a broker</text>
+</svg>

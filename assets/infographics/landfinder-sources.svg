@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">LandFinder — Data Sources and Guardrails</title>
+<desc id="d">Left: five data sources with their access method and risk level: county tax commissioner PDFs, county public notices, GeorgiaPublicNotice through a county-scoped Playwright browser, the Walker County Messenger e-edition with OCR, and a purchased parcel shapefile. Right: the guardrails designed in: throttling and identification, county-scoped queries, no redistribution of notice content, no mass scraping of the assessor site, no automation of the deeds registry, shapefile used under its licence, and the model's extraction carrying a confidence column.</desc>
+<defs>
+  <style>
+    .ig-title{font:700 44px "Space Grotesk",Inter,system-ui,sans-serif;fill:#E8ECEF;letter-spacing:-.02em}
+    .ig-eyebrow{font:500 15px "JetBrains Mono",ui-monospace,monospace;fill:#F2A541;letter-spacing:.1em}
+    .ig-grp{font:700 14px "JetBrains Mono",ui-monospace,monospace;fill:#F2A541;letter-spacing:.1em}
+    .ig-num{font:700 15px "JetBrains Mono",ui-monospace,monospace;fill:#F2A541;letter-spacing:.08em}
+    .ig-name{font:700 20px "Space Grotesk",Inter,system-ui,sans-serif;fill:#E8ECEF}
+    .ig-note{font:400 15px Inter,system-ui,sans-serif;fill:#B8C2CC}
+    .ig-item{font:400 15px Inter,system-ui,sans-serif;fill:#D5DCE3}
+    .ig-cap{font:400 15px "JetBrains Mono",ui-monospace,monospace;fill:#9AA5AF}
+    .ig-tag{font:700 12px "JetBrains Mono",ui-monospace,monospace;fill:#0F1419;letter-spacing:.08em}
+    .ig-card{fill:#161D25;stroke:#2A3540;stroke-width:1.5}
+    .ig-card-hi{fill:#161D25;stroke:#F2A541;stroke-width:2.5}
+    .ig-ext{fill:#0F1419;stroke:#4A5661;stroke-width:1.5;stroke-dasharray:6 5}
+    .ig-ok{fill:#7FC8A9}
+    .ig-warn{fill:#F2A541}
+  </style>
+</defs>
+<rect width="1600" height="900" fill="#0F1419"/>
+<text class="ig-eyebrow" x="80" y="78">LANDFINDER · WHERE THE DATA COMES FROM, AND WHAT THE PIPELINE REFUSES TO DO</text>
+<text class="ig-title" x="80" y="132">LandFinder — Data Sources and Guardrails</text>
+<text class="ig-note" x="80" y="172" style="font-size:18px">Every feed was chosen with its terms of use in view. The legal guardrails are design decisions, not a disclaimer.</text>
+
+<!-- LEFT: sources -->
+<text class="ig-grp" x="80" y="230">FIVE SOURCES · METHOD · RISK</text>
+<g>
+  <rect class="ig-card" x="80" y="250" width="700" height="88" rx="12"/>
+  <text class="ig-name" x="104" y="282">Tax Commissioner tax sales</text>
+  <text class="ig-note" x="104" y="308">PDF download · highest-value feed, built first</text>
+  <rect class="ig-ok" x="690" y="266" width="66" height="22" rx="11"/><text class="ig-tag" x="708" y="282">LOW</text>
+</g>
+<g>
+  <rect class="ig-card" x="80" y="350" width="700" height="88" rx="12"/>
+  <text class="ig-name" x="104" y="382">County public notices</text>
+  <text class="ig-note" x="104" y="408">HTML + PDF · light secondary feed</text>
+  <rect class="ig-ok" x="690" y="366" width="66" height="22" rx="11"/><text class="ig-tag" x="708" y="382">LOW</text>
+</g>
+<g>
+  <rect class="ig-card-hi" x="80" y="450" width="700" height="88" rx="12"/>
+  <text class="ig-name" x="104" y="482">GeorgiaPublicNotice.com</text>
+  <text class="ig-note" x="104" y="508">Playwright, county-scoped only · primary legal-notice feed</text>
+  <rect class="ig-warn" x="630" y="466" width="126" height="22" rx="11"/><text class="ig-tag" x="642" y="482">TOS · READ-ONLY</text>
+</g>
+<g>
+  <rect class="ig-card" x="80" y="550" width="700" height="88" rx="12"/>
+  <text class="ig-name" x="104" y="582">Walker County Messenger e-edition</text>
+  <text class="ig-note" x="104" y="608">Playwright + OCR · free secondary feed and cross-check</text>
+  <rect class="ig-ok" x="690" y="566" width="66" height="22" rx="11"/><text class="ig-tag" x="708" y="582">LOW</text>
+</g>
+<g>
+  <rect class="ig-card" x="80" y="650" width="700" height="88" rx="12"/>
+  <text class="ig-name" x="104" y="682">Parcel and assessor data</text>
+  <text class="ig-note" x="104" y="708">Purchased county shapefile · the enrichment backbone</text>
+  <rect class="ig-warn" x="664" y="666" width="92" height="22" rx="11"/><text class="ig-tag" x="676" y="682">LICENCE</text>
+</g>
+<text class="ig-cap" x="80" y="780">Until the shapefile is imported, enrichment is skipped gracefully and</text>
+<text class="ig-cap" x="80" y="804">notice-based leads still flow through to the report.</text>
+
+<!-- RIGHT: guardrails -->
+<text class="ig-grp" x="840" y="230">GUARDRAILS · DESIGNED IN</text>
+<g>
+  <rect class="ig-ext" x="840" y="250" width="680" height="488" rx="14"/>
+  <text class="ig-num" x="864" y="284">01</text><text class="ig-item" x="904" y="284">Every scraper throttles and sends an identifying User-Agent.</text>
+  <text class="ig-num" x="864" y="326">02</text><text class="ig-item" x="904" y="326">GeorgiaPublicNotice is queried for one county only, read-only.</text>
+  <text class="ig-num" x="864" y="368">03</text><text class="ig-item" x="904" y="368">Notice content is never redistributed; the report carries</text>
+  <text class="ig-item" x="904" y="390">extracted fields and a summary, not the notice text.</text>
+  <text class="ig-num" x="864" y="432">04</text><text class="ig-item" x="904" y="432">The assessor site is not mass-scraped. The deeds registry is</text>
+  <text class="ig-item" x="904" y="454">not automated. Both are reserved for manual per-lead checks.</text>
+  <text class="ig-num" x="864" y="496">05</text><text class="ig-item" x="904" y="496">The purchased shapefile is used per its licence.</text>
+  <text class="ig-num" x="864" y="538">06</text><text class="ig-item" x="904" y="538">Model extraction writes a confidence column on every row;</text>
+  <text class="ig-item" x="904" y="560">rules classification runs before the model is asked anything.</text>
+  <text class="ig-num" x="864" y="602">07</text><text class="ig-item" x="904" y="602">Without an API key the newspaper run still works: it finds the</text>
+  <text class="ig-item" x="904" y="624">legal pages and dumps their text, with no structured rows.</text>
+  <text class="ig-num" x="864" y="666">08</text><text class="ig-item" x="904" y="666">Raw bytes are kept content-addressed, so a re-run never</text>
+  <text class="ig-item" x="904" y="688">re-fetches or double-counts a notice already seen.</text>
+</g>
+<text class="ig-cap" x="840" y="780">Deferred on purpose: Docker packaging, an interactive map over the stored</text>
+<text class="ig-cap" x="840" y="804">geometry, and AI-generated owner outreach letters.</text>
+</svg>

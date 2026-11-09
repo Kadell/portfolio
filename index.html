@@ -201,6 +201,42 @@
       <p class="card-split"><b>Designed</b> the concept, machine roster, progression and grading model; QA of every build. <b>Agents wrote</b> the Godot scenes, grading harness, tutorial and installer.</p>
       <div class="card-actions"><button type="button" class="btn btn-explore" data-project="stationscript" aria-haspopup="dialog">Explore StationScript</button></div>
     </article>
+    <article class="card">
+      <div class="shot"><button type="button" class="zoom" data-zoom="assets/simplepath-demo.webp?v=b81e4990" aria-label="Enlarge the SimplePath school-day demo" data-caption="SimplePath · a student's school day beside the AI teacher (public demo on the live site)"><img src="assets/simplepath-demo.webp?v=b81e4990" alt="SimplePath demo: a third grader's daily checklist for Math, Reading and Writing next to an AI Teacher chat panel labelled 'Parents can review all conversations'" width="1600" height="900" loading="lazy"></button></div>
+      <div class="mono">SimplePath · Next.js + Prisma + Claude API · 2026</div>
+      <h3>Multi-tenant homeschool curriculum platform with an AI teacher parents can audit</h3>
+      <ul class="card-list">
+        <li>Live at <a href="https://simplepathhomeschool.com" rel="noopener">simplepathhomeschool.com</a>: Pre-K to 12, 117 courses of 180 daily lessons, Stripe billing.</li>
+        <li>One codebase and one database serve several branded schools; every tenant-scoped query injects the tenant.</li>
+        <li>The AI teacher is Socratic on quizzes, budgeted per student and household, and every conversation is visible to the parent.</li>
+      </ul>
+      <p class="card-split"><b>Designed</b> the product, the tenant and entitlement model, the curriculum structure and the parent-visibility rules; QA of every build. <b>Agents wrote</b> the application code and drafted the lessons under standards guardrails, reviewed before publishing.</p>
+      <div class="card-actions"><button type="button" class="btn btn-explore" data-project="simplepath" aria-haspopup="dialog">Explore SimplePath</button></div>
+    </article>
+    <article class="card">
+      <div class="shot"><button type="button" class="zoom" data-zoom="assets/traderio-overview.webp?v=9bf293af" aria-label="Enlarge the TraderIO signal-path infographic" data-caption="TraderIO · the signal path (open Explore for the full set)"><img src="assets/traderio-overview.webp?v=9bf293af" alt="TraderIO signal path infographic: ten stages from a TradingView alert through a one-path Cloudflare tunnel, webhook receiver, parser, rules and account rotation to the NinjaTrader AddOns, with a feedback loop of account state" width="1600" height="900" loading="lazy"></button></div>
+      <div class="mono">TraderIO · Python/FastAPI + C# · 2026</div>
+      <h3>Webhook-to-broker order router with five independent safety gates</h3>
+      <ul class="card-list">
+        <li>TradingView alerts in over a Cloudflare tunnel that publishes one path; protected futures orders out through NinjaTrader.</li>
+        <li>Declarative rules and a pure, unit-tested scorer choose which prop-firm account takes each trade.</li>
+        <li>Replaced an n8n flow, then a hosted relay; runs around the clock as a Windows service, 765 tests.</li>
+      </ul>
+      <p class="card-split"><b>Designed</b> the signal path, the gate model, the rotation rules and the operating procedures; ran it live and turned every incident into a rule. <b>Agents wrote</b> the Python service, the two NinjaScript AddOns and the tests.</p>
+      <div class="card-actions"><button type="button" class="btn btn-explore" data-project="traderio" aria-haspopup="dialog">Explore TraderIO</button></div>
+    </article>
+    <article class="card">
+      <div class="shot"><button type="button" class="zoom" data-zoom="assets/landfinder-overview.webp?v=af45766c" aria-label="Enlarge the LandFinder pipeline infographic" data-caption="LandFinder · seven stages, one model call (open Explore for the full set)"><img src="assets/landfinder-overview.webp?v=af45766c" alt="LandFinder pipeline infographic: public records flow through ingest, parse (the only model call), enrich, match, score, report and alert to a hand-verified, reviewable lead list" width="1600" height="900" loading="lazy"></button></div>
+      <div class="mono">LandFinder · Python + PostGIS + Claude API · 2026</div>
+      <h3>County land-opportunity pipeline that uses a model for reading, never for deciding</h3>
+      <ul class="card-list">
+        <li>Seven stages from public legal notices to a weekly, reviewable lead list in CSV and Excel.</li>
+        <li>Claude extracts notice fields with a confidence column; scoring, matching and redemption-date math are deterministic and unit-tested.</li>
+        <li>Legal guardrails designed in: throttled, county-scoped, no redistribution, and deed checks left to a person.</li>
+      </ul>
+      <p class="card-split"><b>Designed</b> the pipeline, the data-source choices and the guardrails. <b>Agents wrote</b> the scrapers, parsers, PostGIS enrichment and reports.</p>
+      <div class="card-actions"><button type="button" class="btn btn-explore" data-project="landfinder" aria-haspopup="dialog">Explore LandFinder</button></div>
+    </article>
   </div>
 </section>
 
@@ -249,7 +285,7 @@
      2. Script is deferred so it never blocks first paint. -->
 <elevenlabs-convai agent-id="[ELEVENLABS-AGENT-ID]"></elevenlabs-convai>
 <script src="assets/player.js?v=1d6338dd" defer></script>
-<script src="assets/projects.js?v=e003d2f2" defer></script>
+<script src="assets/projects.js?v=f3b1ef06" defer></script>
 <script src="assets/showcase.js?v=90ad809a" defer></script>
 <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
 </body>

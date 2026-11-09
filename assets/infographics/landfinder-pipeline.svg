@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">LandFinder — Seven Stages, One Model Call</title>
+<desc id="d">Seven pipeline stages from public records to a weekly report: ingest, parse, enrich, match, score, report, alert. Only the parse stage uses a language model, and only after rules classification has run; everything else is deterministic Python over PostgreSQL and PostGIS. A footer shows the two run modes: a database-free newspaper quick start and the full weekly run.</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6B7784"/></marker>
+  <marker id="arrow-hi" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#F2A541"/></marker>
+  <style>
+    .ig-title{font:700 44px "Space Grotesk",Inter,system-ui,sans-serif;fill:#E8ECEF;letter-spacing:-.02em}
+    .ig-eyebrow{font:500 15px "JetBrains Mono",ui-monospace,monospace;fill:#F2A541;letter-spacing:.1em}
+    .ig-num{font:700 15px "JetBrains Mono",ui-monospace,monospace;fill:#F2A541;letter-spacing:.08em}
+    .ig-name{font:700 21px "Space Grotesk",Inter,system-ui,sans-serif;fill:#E8ECEF}
+    .ig-note{font:400 15px Inter,system-ui,sans-serif;fill:#B8C2CC}
+    .ig-cap{font:400 16px "JetBrains Mono",ui-monospace,monospace;fill:#9AA5AF}
+    .ig-badge{font:700 13px "JetBrains Mono",ui-monospace,monospace;fill:#0F1419;letter-spacing:.1em}
+    .ig-card{fill:#161D25;stroke:#2A3540;stroke-width:1.5}
+    .ig-card-hi{fill:#161D25;stroke:#F2A541;stroke-width:2.5}
+    .ig-link{fill:none;stroke:#6B7784;stroke-width:2;marker-end:url(#arrow)}
+    .ig-loop{fill:none;stroke:#F2A541;stroke-width:2;stroke-dasharray:7 6;marker-end:url(#arrow-hi)}
+    .ig-ext{fill:#0F1419;stroke:#4A5661;stroke-width:1.5;stroke-dasharray:6 5}
+  </style>
+</defs>
+<rect width="1600" height="900" fill="#0F1419"/>
+<text class="ig-eyebrow" x="80" y="78">LANDFINDER · WALKER COUNTY, GEORGIA · LIFECYCLE OF ONE LEGAL NOTICE</text>
+<text class="ig-title" x="80" y="132">LandFinder — Seven Stages, One Model Call</text>
+<text class="ig-note" x="80" y="172" style="font-size:18px">Public records in, a reviewable weekly lead list out. The language model reads notices; it never scores, ranks or decides.</text>
+
+<!-- Row 1: x = 80 + i*295, w=250, y=230, h=170 -->
+<g>
+  <rect class="ig-ext" x="80" y="230" width="250" height="170" rx="12"/>
+  <text class="ig-num" x="104" y="262">00 · SOURCES</text>
+  <text class="ig-name" x="104" y="296">Public</text>
+  <text class="ig-name" x="104" y="322">Records</text>
+  <text class="ig-note" x="104" y="352">Tax sales, county notices,</text>
+  <text class="ig-note" x="104" y="372">legal notices, newspaper e-edition</text>
+</g>
+<line class="ig-link" x1="336" y1="315" x2="368" y2="315"/>
+<g>
+  <rect class="ig-card" x="375" y="230" width="250" height="170" rx="12"/>
+  <text class="ig-num" x="399" y="262">01</text>
+  <text class="ig-name" x="399" y="296">Ingest</text>
+  <text class="ig-note" x="399" y="332">Throttled scrapers, identified</text>
+  <text class="ig-note" x="399" y="352">User-Agent. Raw bytes stored</text>
+  <text class="ig-note" x="399" y="372">content-addressed, deduped</text>
+</g>
+<line class="ig-link" x1="631" y1="315" x2="663" y2="315"/>
+<g>
+  <rect class="ig-card-hi" x="670" y="230" width="250" height="170" rx="12"/>
+  <rect x="694" y="246" width="150" height="22" rx="11" fill="#F2A541"/>
+  <text class="ig-badge" x="706" y="262">02 · MODEL CALL</text>
+  <text class="ig-name" x="694" y="296">Parse</text>
+  <text class="ig-note" x="694" y="332">PDF text, OCR for scans.</text>
+  <text class="ig-note" x="694" y="352">Rules classify first;</text>
+  <text class="ig-note" x="694" y="372">Claude extracts the fields</text>
+</g>
+<line class="ig-link" x1="926" y1="315" x2="958" y2="315"/>
+<g>
+  <rect class="ig-card" x="965" y="230" width="250" height="170" rx="12"/>
+  <text class="ig-num" x="989" y="262">03</text>
+  <text class="ig-name" x="989" y="296">Enrich</text>
+  <text class="ig-note" x="989" y="332">Join notices to parcels from the</text>
+  <text class="ig-note" x="989" y="352">licensed county shapefile in</text>
+  <text class="ig-note" x="989" y="372">PostGIS; derive owner flags</text>
+</g>
+<line class="ig-link" x1="1221" y1="315" x2="1253" y2="315"/>
+<g>
+  <rect class="ig-card" x="1260" y="230" width="250" height="170" rx="12"/>
+  <text class="ig-num" x="1284" y="262">04</text>
+  <text class="ig-name" x="1284" y="296">Match</text>
+  <text class="ig-note" x="1284" y="332">Track tax sales over time;</text>
+  <text class="ig-note" x="1284" y="352">pair right-to-redeem notices</text>
+  <text class="ig-note" x="1284" y="372">with the prior sale</text>
+</g>
+
+<path class="ig-link" d="M1385 406v62"/>
+
+<!-- Row 2 right to left -->
+<g>
+  <rect class="ig-card" x="1260" y="475" width="250" height="170" rx="12"/>
+  <text class="ig-num" x="1284" y="507">05</text>
+  <text class="ig-name" x="1284" y="541">Score</text>
+  <text class="ig-note" x="1284" y="577">Deterministic opportunity and</text>
+  <text class="ig-note" x="1284" y="597">lead scores; redemption-date</text>
+  <text class="ig-note" x="1284" y="617">math is unit-tested</text>
+</g>
+<line class="ig-link" x1="1253" y1="560" x2="1221" y2="560"/>
+<g>
+  <rect class="ig-card" x="965" y="475" width="250" height="170" rx="12"/>
+  <text class="ig-num" x="989" y="507">06</text>
+  <text class="ig-name" x="989" y="541">Report</text>
+  <text class="ig-note" x="989" y="577">Top-10 lists: acreage, tax sale,</text>
+  <text class="ig-note" x="989" y="597">redemption, absentee owner.</text>
+  <text class="ig-note" x="989" y="617">CSV and Excel, one per week</text>
+</g>
+<line class="ig-link" x1="958" y1="560" x2="926" y2="560"/>
+<g>
+  <rect class="ig-card" x="670" y="475" width="250" height="170" rx="12"/>
+  <text class="ig-num" x="694" y="507">07</text>
+  <text class="ig-name" x="694" y="541">Alert</text>
+  <text class="ig-note" x="694" y="577">Optional Discord post for new</text>
+  <text class="ig-note" x="694" y="597">high-score leads</text>
+</g>
+<line class="ig-link" x1="663" y1="560" x2="631" y2="560"/>
+<g>
+  <rect class="ig-card-hi" x="375" y="475" width="250" height="170" rx="12"/>
+  <rect x="399" y="491" width="160" height="22" rx="11" fill="#F2A541"/>
+  <text class="ig-badge" x="411" y="507">08 · HUMAN STEP</text>
+  <text class="ig-name" x="399" y="541">Verify by Hand</text>
+  <text class="ig-note" x="399" y="577">Deeds and assessor records</text>
+  <text class="ig-note" x="399" y="597">checked per lead, on purpose.</text>
+  <text class="ig-note" x="399" y="617">Nothing here is automated</text>
+</g>
+<line class="ig-link" x1="368" y1="560" x2="336" y2="560"/>
+<g>
+  <rect class="ig-ext" x="80" y="475" width="250" height="170" rx="12"/>
+  <text class="ig-num" x="104" y="507">RESULT</text>
+  <text class="ig-name" x="104" y="541">Reviewable</text>
+  <text class="ig-name" x="104" y="567">Lead List</text>
+  <text class="ig-note" x="104" y="597">A database and a spreadsheet,</text>
+  <text class="ig-note" x="104" y="617">refreshed weekly</text>
+</g>
+
+<!-- idempotent loop -->
+<path class="ig-loop" d="M205 651v60h1180v-60"/>
+<text class="ig-cap" x="470" y="736">weekly re-run is idempotent: content hashes and upserts make repeating the whole pipeline safe</text>
+
+<g>
+  <rect class="ig-ext" x="80" y="770" width="1430" height="92" rx="12"/>
+  <text class="ig-num" x="104" y="800">TWO WAYS TO RUN</text>
+  <text class="ig-note" x="104" y="824">Quick start: the newspaper feed alone, no database, no OCR; Claude extracts every notice from the e-edition's legal pages.</text>
+  <text class="ig-note" x="104" y="846">Full run: all four feeds through PostgreSQL + PostGIS, scheduled weekly, stage by stage or run-all.</text>
+</g>
+</svg>
