@@ -177,7 +177,7 @@
     if (p.screenshots?.length) {
       body.append(el('div', { class: 'sc-shots' }, p.screenshots.map(s => el('figure', { class: 'sc-shot' }, [
         el('button', { type: 'button', class: 'zoom', 'data-zoom': s.src, 'aria-label': 'Enlarge: ' + s.alt }, [
-          el('img', { src: s.src, alt: s.alt, loading: 'lazy', width: '1280', height: '720' })
+          el('img', { src: s.src, alt: s.alt, loading: 'lazy', width: s.width || '1920', height: s.height || '1080' })
         ]),
         s.caption && el('figcaption', { text: s.caption })
       ]))));

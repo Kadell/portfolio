@@ -145,9 +145,9 @@ window.PORTFOLIO_PROJECTS = [
     subtitle: 'Build a space factory. Program every machine in real Python.',
     badges: ['Godot 4.7', 'GDScript', 'Python 3.12 (bundled)', 'Windows installer', 'itch.io'],
     screenshots: [
-      { src: 'assets/stationscript-factory.webp?v=987b6be3', alt: 'Factory floor with named machines joined by conveyors, each showing a three-star grade', caption: 'A late-game factory: ore line, smelters, test bench, market uplink.' },
-      { src: 'assets/stationscript-editor.webp?v=a253146d', alt: 'In-game code editor with a brief on the left and a Python function on the right', caption: 'Every programmable machine opens into a brief, an editor and a step debugger.' },
-      { src: 'assets/stationscript-grade.webp?v=f0f7ec9a', alt: 'Grade report showing three stars, test results and a reference solution', caption: 'Code is graded on correctness and clarity first, with speed, memory, robustness and security unlocking later.' }
+      { src: 'assets/stationscript-factory.webp?v=45e9ae2c', alt: 'Factory floor with named machines joined by conveyors, each showing a three-star grade', caption: 'A late-game factory: ore line, smelters, test bench, market uplink.' },
+      { src: 'assets/stationscript-editor.webp?v=1b0b5556', alt: 'In-game code editor with a brief on the left and a Python function on the right', caption: 'Every programmable machine opens into a brief, an editor and a step debugger.' },
+      { src: 'assets/stationscript-grade.webp?v=d58e48fe', alt: 'Grade report showing three stars, test results and a reference solution', caption: 'Code is graded on correctness and clarity first, with speed, memory, robustness and security unlocking later.' }
     ],
     sections: [
       {
