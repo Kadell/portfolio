@@ -16,6 +16,16 @@ Then render the PDF (uses the print stylesheet; borrows Playwright from the sibl
 node tools/build-pdf.mjs
 ```
 
+## After changing CSS, JS or any asset
+
+`styles.css` and everything under `assets/` are cached for a day or more by browsers and by Cloudflare's edge, so the HTML references them with a content hash (`styles.css?v=b79f984f`). Run this after editing a stylesheet or script, replacing a media file, or regenerating the resume page or PDF, and before committing:
+
+```bash
+node tools/stamp-assets.mjs
+```
+
+Without it a deploy ships new HTML with the old stylesheet.
+
 ## Content rules
 
 - Every claim on the site traces to `career-ops/cv.md` or `config/profile.yml`. No numbers that are not there.
