@@ -131,6 +131,7 @@ h3 { margin: 0; font-weight: 600; font-size: 17px; }
 .timeline li.now { border-top-color: var(--accent); }
 .timeline .role { font-weight: 600; font-size: 14px; }
 .timeline .org { font-size: 13px; color: var(--text-3); }
+.hold-note { margin: 0; font-size: 14px; color: var(--text-3); max-width: 80ch; }
 
 /* resume block */
 .resume-block { border: 1px solid var(--line); border-radius: 8px; padding: 24px; background: var(--surface); display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }

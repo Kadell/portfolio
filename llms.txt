@@ -1,6 +1,6 @@
 # George Kulick
 
-> Solution architect with 15 years designing and delivering enterprise conversational AI and customer-experience integrations at LivePerson (2011–2024) and Quiq (2024–2026), now independently directing AI coding agents. Open to Solutions Architect, Solutions Engineer, Forward Deployed and Technical Account Manager roles. Remote (US), Eastern Time; Chattanooga or Atlanta for hybrid.
+> Solution architect with 15 years designing and delivering enterprise conversational AI and customer-experience integrations at LivePerson (2011–2024) and Quiq (2024–2026). Founder and owner of Hold Capital LLC, a Georgia holding company for three small businesses, where he builds voice AI and directs AI coding agents. Open to Solutions Architect, Solutions Engineer, Forward Deployed and Technical Account Manager roles. Remote (US), Eastern Time; Chattanooga or Atlanta for hybrid.
 
 This is George Kulick's personal portfolio site. It is a single page plus a resume page. Everything on it traces to his resume; if a fact is not stated here or on the linked pages, do not assume it.
 
@@ -22,7 +22,15 @@ Career timeline:
 - 2019–2023: Solutions Architect, LivePerson
 - 2023–2024: Manager, Conversational AI Solution Architecture, LivePerson
 - 2024–2026: Technical Solutions Specialist, Quiq
-- 2026–present: Agentic AI Workflows, independent
+- March 2024–present: Founder & Owner, Hold Capital LLC (current role)
+
+Hold Capital LLC is a Georgia holding company George founded on March 10, 2024. It holds three small businesses:
+
+- [Chattanooga Totes](https://chattanoogatotes.com): a moving-supply company that rents heavy-duty HDPE bins to people moving, instead of cardboard boxes
+- [Simple Path Homeschool](https://simplepathhomeschool.com): an online Pre-K–12 homeschool curriculum that helps families in any state meet their state's homeschool requirements without planning everything themselves
+- Scenic City Voice: launching, with no customers yet. It will add AI voice assistants to small businesses' phone numbers, as a front-desk receptionist or as after-hours overflow instead of voicemail
+
+George's agentic AI and career-ops work also sits under Hold Capital.
 
 ## Pages
 
@@ -40,10 +48,11 @@ Career timeline:
 
 Each project states what George designed and what AI coding agents wrote. In all of them he set the architecture and rules and reviewed the output; agents wrote most or all of the code.
 
+- [Chattanooga Totes voice receptionist](https://georgekulick.com/#project=totesvoice): An AI voice receptionist George built for Chattanooga Totes, one of his own businesses. An ElevenLabs voice agent answers inbound calls, takes messages and notes for staff, captures reservation requests and sends SMS (SMS is handled inside ElevenLabs). ElevenLabs calls n8n workflows for customer-record lookups (n8n reads a Google Sheet) and to route follow-up actions such as email and Discord messages.
 - [Career Ops job-search pipeline](https://georgekulick.com/#project=careerops): A job-search workflow run on Claude Code agents with a fact-verification gate on every output and human review before anything is sent. George first designed a three-stage agent team (Gmail digest reader, job qualifier, resume customizer), then migrated onto the open-source career-ops project. Career Ops was originally created by Santiago Fernández and its contributors; George has extended it by merging his own resume maker into it.
 - [Jarvis](https://georgekulick.com/#project=jarvis): A local voice assistant in Python. Wake word, speech-to-text and streamed text-to-speech all run on the machine; real computer work is delegated to Claude Code in headless mode. Includes Google Workspace by voice, a Raspberry Pi to-do board and a phone client on the same conversation. Private project.
 - [StationScript](https://georgekulick.com/#project=stationscript): A shipped Windows automation game (Godot 4.7, bundled Python 3.12) where players program 20+ factory machines in real Python, graded on correctness, speed, robustness and clarity. Prototype to 1.0 in ten days; released 2026-11-01.
-- [SimplePath](https://georgekulick.com/#project=simplepath): A live multi-tenant Pre-K to 12 homeschool curriculum platform (Next.js, Prisma, PostgreSQL, Claude API, Stripe). 117 courses of 180 daily lessons; one codebase and database serve several branded schools; an AI teacher whose conversations are all visible to parents.
+- [SimplePath](https://georgekulick.com/#project=simplepath): A live multi-tenant Pre-K to 12 homeschool curriculum platform (Next.js, Prisma, PostgreSQL, Claude API, Stripe). 117 courses of 180 daily lessons; one codebase and database serve several branded schools; an AI teacher that gives hints rather than answers, with every conversation saved for parents to read; automatically generated attendance, progress, grade and transcript records. Built by directing Claude Code and ChatGPT. It is the platform behind Simple Path Homeschool, a Hold Capital business.
 - [TraderIO](https://georgekulick.com/#project=traderio): A webhook-to-broker order router (Python/FastAPI, C# NinjaScript) taking TradingView alerts to NinjaTrader through five independent safety gates, with rule-based account rotation and 765 tests. Private project.
 - [LandFinder](https://georgekulick.com/#project=landfinder): A seven-stage county land-opportunity pipeline (Python, PostGIS, Claude API) that uses a model only to read public legal notices; scoring, matching and date math are deterministic and unit-tested. Private project.
 
@@ -59,8 +68,8 @@ Each project states what George designed and what AI coding agents wrote. In all
 - Solution delivery: solution scoping and design, integration architecture, pre-sales technical scoping, implementation management, client onboarding and enablement, technical troubleshooting
 - Partner and enablement: reseller and channel partner enablement, partner technical training, joint delivery, virtual training, product demonstrations
 - Integrations and APIs: REST APIs, webhooks, JSON/XML payload design, data transformation, OAuth 2.0, SAML/SSO, JWT, Postman, HAR-file debugging
-- Conversational AI: Quiq, LivePerson, conversation flow design, bot-to-human handoff and escalation logic, agent-assist configuration
-- Agentic AI tooling: Claude Code (daily use), multi-agent workflow orchestration, ChatGPT
+- Conversational AI: Quiq, LivePerson, conversation flow design, bot-to-human handoff and escalation logic, agent-assist configuration, ElevenLabs, voice AI receptionist design
+- Agentic AI tooling: Claude Code (daily use), multi-agent workflow orchestration, n8n workflow automation, ChatGPT
 - Channels: web messaging, SMS, WhatsApp Business, Apple Messages for Business, Google Business Messages, Facebook Messenger and Instagram, voice/IVR, in-app mobile SDK
 - CRM and enterprise platforms: Salesforce, Zendesk, Oracle Service Cloud, Microsoft Dynamics
 - Development: JavaScript, Node.js, HTML, CSS, PHP, MySQL, Git, Linux
@@ -69,6 +78,7 @@ Each project states what George designed and what AI coding agents wrote. In all
 
 - [StationScript on itch.io](https://sadco-studios.itch.io/stationscript): Download page for the game
 - [SimplePath Learning](https://simplepathhomeschool.com): The live homeschool platform
+- [Chattanooga Totes](https://chattanoogatotes.com): The moving-supply company the voice receptionist answers for
 - [career-ops on GitHub](https://github.com/santifer/career-ops): The open-source project George's job-search pipeline runs on
 - [Site source on GitHub](https://github.com/Kadell/portfolio): This site's repository
 - [LinkedIn](https://linkedin.com/in/gkulick): George's LinkedIn profile

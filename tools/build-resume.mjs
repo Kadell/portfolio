@@ -71,6 +71,9 @@ const page = `<!doctype html>
 <meta name="twitter:title" content="Resume · George Kulick">
 <meta name="twitter:description" content="George Kulick, solution architect: 15 years of enterprise conversational AI delivery at LivePerson and Quiq.">
 <meta name="twitter:image" content="https://georgekulick.com/assets/og.png">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="../styles.css">

@@ -4,7 +4,7 @@ This document is the complete set of facts the assistant on georgekulick.com may
 
 ## Who George Kulick is
 
-George Kulick is a solution architect with 15 years of experience designing and delivering enterprise conversational AI and customer-experience integrations. He spent more than twelve years at LivePerson, from 2011 to 2024, and two years at Quiq, from 2024 to 2026. Since August 2026 he has worked independently, directing AI coding agents to build software.
+George Kulick is a solution architect with 15 years of experience designing and delivering enterprise conversational AI and customer-experience integrations. He spent more than twelve years at LivePerson, from 2011 to 2024, and two years at Quiq, from 2024 to 2026. He is the founder and owner of Hold Capital LLC, a Georgia holding company he founded in March 2024, which is his current role. Under it he builds voice AI and directs AI coding agents to build software.
 
 George works the full delivery lifecycle: pre-sales scoping, Statements of Work, integration design, implementation, troubleshooting, and client enablement.
 
@@ -36,7 +36,7 @@ This knowledge base does not contain confidential client details. The case studi
 
 George's roles in order, most recent first:
 
-- Agentic AI Workflows, independent, August 2026 to present.
+- Founder and Owner of Hold Capital LLC, March 2024 to present. This is his current role.
 - Technical Solutions Specialist at Quiq, August 2024 to August 2026.
 - Manager, Conversational AI Solution Architecture at LivePerson, January 2023 to January 2024.
 - Solutions Architect at LivePerson, June 2019 to January 2023.
@@ -51,13 +51,25 @@ All of George's roles at Quiq and LivePerson were remote.
 
 George holds a Bachelor of Science in Computer Science from Covenant College.
 
-## Current work: Agentic AI Workflows (independent, August 2026 to present)
+## Current work: Founder and Owner, Hold Capital LLC (March 2024 to present)
 
-Since August 2026 George has worked independently on agentic AI workflows. He operates a multistep agentic workflow built on Claude Code for job-search operations. It uses parallel research and evaluation agents, direct applicant-tracking-system API integrations with Greenhouse, Ashby and Lever, automated fact-verification gates, and generated deliverables with human review on every output.
+Hold Capital LLC is a Georgia holding company that George founded on March 10, 2024. His title is Founder and Owner. It holds three small businesses.
+
+Chattanooga Totes, at chattanoogatotes.com, is a moving-supply company that rents heavy-duty HDPE bins to people moving, instead of cardboard boxes.
+
+Simple Path Homeschool, at simplepathhomeschool.com, is an online Pre-K to 12 homeschool curriculum that helps families in any state meet their state's homeschool requirements without planning everything themselves.
+
+Scenic City Voice is launching and has no customers yet. It will add AI voice assistants to small businesses' phone numbers, as a front-desk receptionist or as after-hours overflow instead of voicemail.
+
+George built an AI voice receptionist for Chattanooga Totes. An ElevenLabs voice agent answers inbound calls, takes messages and notes for staff, captures reservation requests, and sends SMS. SMS is handled inside ElevenLabs. ElevenLabs calls n8n workflows for customer-record lookups, where n8n reads a Google Sheet, and to route follow-up actions such as email and Discord messages.
+
+George built the Simple Path Homeschool platform by directing AI coding agents, Claude Code and ChatGPT. It has a daily student checklist, an AI teacher that gives hints rather than answers with every conversation saved for parents to read, automatically generated attendance, progress, grade and transcript records, and Stripe subscription billing. It is described later in this document as SimplePath.
+
+George's agentic AI workflow work also sits under Hold Capital. He operates a multistep agentic workflow built on Claude Code for job-search operations. It uses parallel research and evaluation agents, direct applicant-tracking-system API integrations with Greenhouse, Ashby and Lever, automated fact-verification gates, and generated deliverables with human review on every output.
 
 George directs AI coding agents to extend an open-source pipeline called career-ops with custom tooling: API portal scanners, data dashboards and verification scripts. He supervises the architecture and reviews the agents' work rather than hand-writing each component.
 
-During this period George has also built several software projects by directing AI coding agents: Jarvis, StationScript, SimplePath, TraderIO and LandFinder. Each is described later in this document.
+George has also built several software projects by directing AI coding agents: Jarvis, StationScript, SimplePath, TraderIO and LandFinder. Each is described later in this document.
 
 ## Quiq: Technical Solutions Specialist (August 2024 to August 2026)
 
@@ -247,9 +259,9 @@ Partner and enablement: reseller and channel partner enablement, partner technic
 
 Integrations and APIs: REST APIs, webhooks and event-driven callbacks, polling versus push design, JSON and XML payload design, field mapping and data transformation, OAuth 2.0, SAML and single sign-on, JWT, API keys and bearer tokens, Postman, and browser devtools and HAR-file debugging.
 
-Conversational AI platforms: Quiq and LivePerson, conversation flow design, bot-to-human handoff and escalation logic, and agent-assist configuration.
+Conversational AI platforms: Quiq and LivePerson, conversation flow design, bot-to-human handoff and escalation logic, agent-assist configuration, ElevenLabs, and voice AI receptionist design.
 
-Agentic AI tooling: Claude Code, used daily both professionally and personally, multi-agent workflow orchestration, AI-assisted solution documentation and delivery, and ChatGPT.
+Agentic AI tooling: Claude Code, used daily both professionally and personally, multi-agent workflow orchestration, n8n workflow automation, AI-assisted solution documentation and delivery, and ChatGPT.
 
 Messaging channels: web messaging, SMS, WhatsApp Business, Apple Messages for Business, Google Business Messages, Facebook Messenger and Instagram, voice and IVR, and in-app mobile SDKs.
 
@@ -267,7 +279,7 @@ Does George have experience in regulated industries? Yes. He grew the Citibank d
 
 Does George write code? George has a Computer Science degree and a development background in JavaScript, Node.js, HTML, CSS, PHP and MySQL. He began his career as a web developer and built client web integrations at LivePerson. On his recent AI agent builds he is clear that he designed and directed the work and AI agents wrote most or all of the code.
 
-Does George have experience with AI coding agents? Yes. He used Claude Code daily at Quiq as it was rolled into the delivery workflow, and since August 2026 he has directed AI coding agents to build and ship several projects, including a game, a live multi-tenant web platform and an order router with 765 tests.
+Does George have experience with AI coding agents? Yes. He used Claude Code daily at Quiq as it was rolled into the delivery workflow, and under Hold Capital he has directed AI coding agents to build and ship several projects, including a game, a live multi-tenant web platform and an order router with 765 tests.
 
 Does George have partner or channel experience? Yes. At Quiq he enabled reseller partners: training their technical staff, scoping alongside their sales teams and delivering jointly on shared customers.
 

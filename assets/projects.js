@@ -14,6 +14,41 @@
 //   links[]       { label, href }
 window.PORTFOLIO_PROJECTS = [
   {
+    id: 'totesvoice',
+    eyebrow: 'Chattanooga Totes · ElevenLabs · n8n',
+    title: 'Chattanooga Totes voice receptionist',
+    subtitle: 'An AI voice receptionist that answers inbound calls for a moving-supply company.',
+    badges: ['ElevenLabs', 'n8n', 'Google Sheets', 'SMS', 'Email', 'Discord'],
+    sections: [
+      {
+        heading: 'What it is',
+        paragraphs: [
+          'Chattanooga Totes is a moving-supply company that rents heavy-duty HDPE bins to people moving, instead of cardboard boxes. Its inbound calls are answered by an ElevenLabs voice agent that I built.'
+        ]
+      },
+      {
+        heading: 'What the agent does',
+        items: [
+          'Answers inbound calls.',
+          'Takes messages and notes for staff.',
+          'Captures reservation requests.',
+          'Sends SMS, handled inside ElevenLabs.'
+        ]
+      },
+      {
+        heading: 'How it is connected',
+        items: [
+          'ElevenLabs calls n8n workflows for customer-record lookups; n8n reads a Google Sheet.',
+          'ElevenLabs also calls n8n to route follow-up actions such as email and Discord messages.'
+        ]
+      }
+    ],
+    note: 'Chattanooga Totes is one of the three businesses I own through Hold Capital LLC.',
+    links: [
+      { label: 'chattanoogatotes.com', href: 'https://chattanoogatotes.com' }
+    ]
+  },
+  {
     id: 'careerops',
     eyebrow: 'career-ops · open source · Claude Code / Codex / OpenCode · 2026',
     title: 'Career Ops',
@@ -224,7 +259,7 @@ window.PORTFOLIO_PROJECTS = [
           'Grade programs bundle five core subjects; each course keeps its own current day and auto-advances when the day\'s blocks are complete, so siblings in different grades run from the same dashboard.',
           'Streaming AI teacher with the tenant\'s persona, the student\'s grade and today\'s lesson injected; Socratic on quizzes rather than giving answers.',
           'Per-student daily message caps and per-household monthly token budgets, enforced server-side; every conversation logged and visible to the parent.',
-          'Attendance days and estimated hours rolled up from completed blocks; printable report cards; transcript records in the schema.',
+          'Attendance, progress, grade and transcript records generated automatically; attendance days and estimated hours rolled up from completed blocks; printable report cards.',
           'Stripe Checkout with webhook fulfilment, cancellation and past-due handling; a dev billing provider grants entitlements instantly so the whole purchase flow is clickable without keys.',
           'Free Grade 1 and the first ten days of every other grade, gated by the same entitlement system as paid access.'
         ]
@@ -252,7 +287,8 @@ window.PORTFOLIO_PROJECTS = [
     ],
     authorship: {
       designed: 'The product and its pricing model, the tenant and entitlement architecture, the curriculum structure and pacing, the parent-visibility and AI-budget rules; QA of every build and review of published content.',
-      wrote: 'Agents wrote the application code, the content pipeline and the lesson drafts, which were reviewed against the standards before publishing.'
+      wrote: 'Agents (Claude Code and ChatGPT) wrote the application code, the content pipeline and the lesson drafts, which were reviewed against the standards before publishing.',
+      credit: 'Simple Path Homeschool is one of the three businesses I own through Hold Capital LLC. It helps families in any state meet their state\'s homeschool requirements without planning everything themselves.'
     },
     links: [
       { label: 'simplepathhomeschool.com', href: 'https://simplepathhomeschool.com' }
