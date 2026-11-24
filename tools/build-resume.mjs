@@ -15,7 +15,10 @@ const inline = (s) =>
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
     .replace(/\*(.+?)\*/g, '<em>$1</em>')
     .replace(/(linkedin\.com\/in\/[\w-]+)/g, '<a href="https://$1">$1</a>')
-    .replace(/([\w.+-]+@[\w-]+\.[\w.]+)/g, '<a href="mailto:$1">$1</a>');
+    .replace(/(^|[\s|(])(georgekulick\.com)\b/g, '$1<a href="https://$2">$2</a>')
+    // email_off comments stop Cloudflare Email Obfuscation from rewriting the address into
+    // "[email protected]", which ATS link checkers and crawlers cannot read.
+    .replace(/([\w.+-]+@[\w-]+\.[\w.]+)/g, '<!--email_off--><a href="mailto:$1">$1</a><!--/email_off-->');
 
 const lines = readFileSync(src, 'utf8').split(/\r?\n/);
 const html = [];
@@ -97,7 +100,7 @@ ${html.join('\n')}
 </main>
 <footer class="site-footer"><div class="wrap">
   <div>Generated from the canonical CV. Built with Claude Code.</div>
-  <div><a href="mailto:gkulick@gmail.com">gkulick@gmail.com</a> · <a href="https://linkedin.com/in/gkulick">linkedin.com/in/gkulick</a></div>
+  <div><!--email_off--><a href="mailto:gkulick@gmail.com">gkulick@gmail.com</a><!--/email_off--> ·<a href="https://linkedin.com/in/gkulick">linkedin.com/in/gkulick</a></div>
 </div></footer>
 </body>
 </html>
