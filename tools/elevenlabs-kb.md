@@ -59,7 +59,7 @@ Chattanooga Totes, at chattanoogatotes.com, is a moving-supply company that rent
 
 Simple Path Homeschool, at simplepathhomeschool.com, is an online Pre-K to 12 homeschool curriculum that helps families in any state meet their state's homeschool requirements without planning everything themselves.
 
-Scenic City Voice is launching and has no customers yet. It will add AI voice assistants to small businesses' phone numbers, as a front-desk receptionist or as after-hours overflow instead of voicemail.
+Scenic City Voice is live. It adds AI voice assistants to small businesses' phone numbers, as a front-desk receptionist or as after-hours overflow instead of voicemail.
 
 George built an AI voice receptionist for Chattanooga Totes. An ElevenLabs voice agent answers inbound calls, takes messages and notes for staff, captures reservation requests, and sends SMS. SMS is handled inside ElevenLabs. ElevenLabs calls n8n workflows for customer-record lookups, where n8n reads a Google Sheet, and to route follow-up actions such as email and Discord messages.
 
