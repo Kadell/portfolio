@@ -57,10 +57,10 @@ const page = `<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Resume · George Kulick</title>
-<meta name="description" content="George Kulick, solution architect: 15 years of enterprise conversational AI delivery at LivePerson and Quiq.">
+<meta name="description" content="George Kulick, solution architect: 15 years of enterprise conversational AI delivery at LivePerson and Quiq, now building AI agent workflows with ElevenLabs, n8n and Claude Code.">
 <link rel="canonical" href="https://georgekulick.com/resume/">
 <meta property="og:title" content="Resume · George Kulick">
-<meta property="og:description" content="George Kulick, solution architect: 15 years of enterprise conversational AI delivery at LivePerson and Quiq.">
+<meta property="og:description" content="George Kulick, solution architect: 15 years of enterprise conversational AI delivery at LivePerson and Quiq, now building AI agent workflows with ElevenLabs, n8n and Claude Code.">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://georgekulick.com/resume/">
 <meta property="og:image" content="https://georgekulick.com/assets/og.png">
@@ -72,7 +72,7 @@ const page = `<!doctype html>
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Resume · George Kulick">
-<meta name="twitter:description" content="George Kulick, solution architect: 15 years of enterprise conversational AI delivery at LivePerson and Quiq.">
+<meta name="twitter:description" content="George Kulick, solution architect: 15 years of enterprise conversational AI delivery at LivePerson and Quiq, now building AI agent workflows with ElevenLabs, n8n and Claude Code.">
 <meta name="twitter:image" content="https://georgekulick.com/assets/og.png">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
