@@ -38,8 +38,8 @@ George's roles in order, most recent first:
 
 - Founder and Owner of Hodl Capital LLC, March 2024 to present. This is his current role.
 - Technical Solutions Specialist at Quiq, August 2024 to August 2026.
-- Manager, Conversational AI Solution Architecture at LivePerson, January 2023 to January 2024.
-- Solutions Architect at LivePerson, June 2019 to August 2023.
+- Manager, Conversational AI Solution Architecture at LivePerson, January 2023 to February 2024.
+- Solutions Architect at LivePerson, June 2019 to January 2023.
 - Senior Solutions Engineer at LivePerson, February 2017 to June 2019.
 - Deployment Engineer at LivePerson, September 2011 to February 2017.
 
@@ -83,13 +83,13 @@ George led training over Zoom for customer administrators, end users, partner st
 
 At Quiq, George worked hands-on daily with AI coding agents, specifically Claude Code, as Quiq rolled them into the team's delivery workflow.
 
-## LivePerson: Manager, Conversational AI Solution Architecture (January 2023 to January 2024)
+## LivePerson: Manager, Conversational AI Solution Architecture (January 2023 to February 2024)
 
 As Manager of Conversational AI Solution Architecture at LivePerson, George led five solution architects. The team covered LivePerson's entire North American commercial segment, meaning every brand outside the top 100 strategic accounts, several thousand brands in all.
 
 George sustained a continuous pipeline of new integration launches alongside ongoing support for the installed base, allocating the five-person team across the full portfolio. He set technical direction for integration initiatives and aligned architecture decisions with client business objectives.
 
-## LivePerson: Solutions Architect (June 2019 to August 2023)
+## LivePerson: Solutions Architect (June 2019 to January 2023)
 
 As a Solutions Architect at LivePerson, George scoped and implemented 40 to 60 custom solutions and integrations for major North American brands. He led pre-sales technical scoping for custom integrations and wrote the Statements of Work, documenting scope, approach and deliverables for client sign-off. The United Airlines project was during this role.
 
@@ -271,7 +271,7 @@ Development: JavaScript, Node.js, HTML, CSS, PHP, MySQL, Git and Linux.
 
 ## Common questions and answers
 
-Does George have management experience? Yes. From January 2023 to January 2024 he managed a team of five solution architects at LivePerson covering the entire North American commercial segment, several thousand brands.
+Does George have management experience? Yes. From January 2023 to February 2024 he managed a team of five solution architects at LivePerson covering the entire North American commercial segment, several thousand brands.
 
 Does George have pre-sales experience? Yes. At LivePerson he led pre-sales technical scoping for custom integrations and wrote the Statements of Work. At Quiq he provided technical scoping alongside reseller partners' sales conversations.
 
