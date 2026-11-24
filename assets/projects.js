@@ -50,7 +50,7 @@ window.PORTFOLIO_PROJECTS = [
         ]
       }
     ],
-    note: 'Chattanooga Totes is one of the three businesses I own through Hold Capital LLC.',
+    note: 'Chattanooga Totes is one of the three businesses I own through Hodl Capital LLC.',
     links: [
       { label: 'chattanoogatotes.com', href: 'https://chattanoogatotes.com' }
     ]
@@ -295,7 +295,7 @@ window.PORTFOLIO_PROJECTS = [
     authorship: {
       designed: 'The product and its pricing model, the tenant and entitlement architecture, the curriculum structure and pacing, the parent-visibility and AI-budget rules; QA of every build and review of published content.',
       wrote: 'Agents (Claude Code and ChatGPT) wrote the application code, the content pipeline and the lesson drafts, which were reviewed against the standards before publishing.',
-      credit: 'Simple Path Homeschool is one of the three businesses I own through Hold Capital LLC. It helps families in any state meet their state\'s homeschool requirements without planning everything themselves.'
+      credit: 'Simple Path Homeschool is one of the three businesses I own through Hodl Capital LLC. It helps families in any state meet their state\'s homeschool requirements without planning everything themselves.'
     },
     links: [
       { label: 'simplepathhomeschool.com', href: 'https://simplepathhomeschool.com' }
