@@ -18,7 +18,7 @@ window.PORTFOLIO_PROJECTS = [
     eyebrow: 'Chattanooga Totes · ElevenLabs · n8n',
     title: 'Chattanooga Totes voice receptionist',
     subtitle: 'An AI voice receptionist that answers inbound calls for a moving-supply company.',
-    badges: ['ElevenLabs', 'n8n', 'Google Sheets', 'SMS', 'Email', 'Discord'],
+    badges: ['ElevenLabs', 'n8n', 'Google Sheets', 'SMS', 'Email', 'Discord', 'MCP'],
     sections: [
       {
         heading: 'What it is',
@@ -40,6 +40,13 @@ window.PORTFOLIO_PROJECTS = [
         items: [
           'ElevenLabs calls n8n workflows for customer-record lookups; n8n reads a Google Sheet.',
           'ElevenLabs also calls n8n to route follow-up actions such as email and Discord messages.'
+        ]
+      },
+      {
+        heading: 'How I built it',
+        items: [
+          'I built the voice agent and the n8n workflows myself.',
+          'I used Claude through the n8n and ElevenLabs MCP servers for diagnostics and troubleshooting during the build.'
         ]
       }
     ],
